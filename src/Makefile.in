@@ -1,0 +1,14 @@
+DIRS = Misc Solvers Kernels TestFunctions Matrices KRR GP
+OBJS = Misc/Misc.o Solvers/Solvers.o Kernels/Kernels.o TestFunctions/TestFunctions.o Matrices/Matrices.o KRR/KRR.o GP/GP.o
+
+all:
+	for d in ${DIRS}; do ( cd $$d; make ); done
+	ar rvs libcmatrix.a ${OBJS}
+
+clean:
+	for d in ${DIRS}; do ( cd $$d; make clean ); done
+	rm -f *.o *~
+
+uninstall:
+	for d in ${DIRS}; do ( cd $$d; make uninstall ); done
+	rm -f Makefile libcmatrix.a

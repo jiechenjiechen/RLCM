@@ -1,0 +1,102 @@
+LINKER     =
+CXXFLAGS   = -O2 -Wall -std=c++0x
+LIBS       = -lcmatrix -lm -lstdc++
+LIB_PATHS  = -L${CMATRIX_DIR}/lib
+INCL_PATHS = -I${CMATRIX_DIR}/include
+EXES       = Test_Common.ex \
+             Test_LibSVM_IO.ex \
+             Test_LibSVM_IO_binary.ex \
+             Test_METIS_IO.ex \
+             Test_CSR_IO_binary.ex \
+             Test_Raw_binary.ex \
+             Test_spblas.ex \
+             Test_PCG.ex \
+             Test_GMRES.ex \
+             Test_Lanczos.ex \
+             Test_IsotropicGaussian.ex \
+             Test_IsotropicLaplace.ex \
+             Test_AnisotropicGaussian.ex \
+             Test_ProductLaplace.ex \
+             Test_InvMultiquadric.ex \
+             Test_Chi2.ex \
+             Test_Polynomial.ex \
+             Test_SixHumps.ex \
+             Test_Bird.ex \
+             Test_NoName.ex \
+             Test_DVector.ex \
+             Test_DMatrix.ex \
+             Test_SMatrix.ex \
+             Test_SPoint.ex \
+             Test_DPoint.ex \
+             Test_DPointArray.ex \
+             Test_SPointArray.ex \
+             Test_CMatrix.ex \
+             Test_BMatrix.ex
+
+ifeq ($(SYS),LINUX)
+LIBS += -lrt
+endif
+
+ifeq ($(USE_OPENBLAS),1)
+CXXFLAGS += -DUSE_OPENBLAS
+INCL_PATHS += ${OPENBLAS_INCL_PATH}
+else ifeq ($(USE_ESSL),1)
+CXXFLAGS += ${ESSL_CXXFLAGS}
+INCL_PATHS += ${ESSL_INCL_PATH}
+else ifeq ($(USE_MKL),1)
+CXXFLAGS += ${MKL_CXXFLAGS}
+endif
+
+ifeq ($(USE_OPENMP),1)
+CXXFLAGS += -DUSE_OPENMP
+ifeq ($(USE_MKL),0)
+CXXFLAGS += -fopenmp
+endif
+endif
+
+ifeq ($(USE_OPENBLAS),1)
+LIBS += ${OPENBLAS_LIBS} -lpthread -lgfortran
+LIB_PATHS += ${OPENBLAS_LIB_PATH}
+else ifeq ($(USE_ESSL),1)
+LIBS += ${ESSL_LIBS}
+LIB_PATHS += ${ESSL_LIB_PATH}
+else ifeq ($(USE_MKL),1)
+LIBS += ${MKL_LIBS}
+else ifeq ($(USE_OPENMP),1)
+LIBS += -llapack -lblas -lgomp
+else
+LIBS += -llapack -lblas
+endif
+
+ifeq ($(USE_LONG),1)
+CXXFLAGS += -DUSE_LONG
+endif
+
+ifeq ($(HAS_METIS),1)
+CXXFLAGS += -DHAS_METIS
+INCL_PATHS += ${METIS_INCL_PATH}
+LIBS += -lmetis
+LIB_PATHS += ${METIS_LIB_PATH}
+endif
+
+ifeq ($(USE_MATERN),1)
+LINKER += ${FC}
+CXXFLAGS += -DUSE_MATERN
+EXES += Test_IsotropicMatern.ex Test_ChordalMatern.ex
+else
+LINKER += ${CXX}
+endif
+
+all: ${EXES}
+
+%.ex: %.o
+	${LINKER} $^ -o $@ ${LIB_PATHS} ${LIBS}
+
+%.o: %.cpp
+	${CXX} -c $< ${CXXFLAGS} ${INCL_PATHS}
+
+clean:
+	rm -f *.o *~
+
+uninstall:
+	rm -rf Makefile *.ex* *.relres* Test_Common_*.txt Test_GP_RLCM_* Test_GP_Standard_* Test_GP2_RLCM_* Test_GP2_Standard_* Test_GP3_RLCM_*

@@ -1,0 +1,69 @@
+CXXFLAGS = -O2 -Wall -std=c++0x
+OBJS     = IsotropicGaussian.o IsotropicLaplace.o AnisotropicGaussian.o ProductLaplace.o InvMultiquadric.o Chi2.o Polynomial.o
+
+FFLAGS   =
+LIBS     =
+MAKE_BESSELK =
+OBJS_BESSELK =
+
+ifeq ($(USE_OPENBLAS),1)
+CXXFLAGS += -DUSE_OPENBLAS
+INCL_PATHS += ${OPENBLAS_INCL_PATH}
+else ifeq ($(USE_ESSL),1)
+CXXFLAGS += ${ESSL_CXXFLAGS}
+INCL_PATHS += ${ESSL_INCL_PATH}
+else ifeq ($(USE_MKL),1)
+CXXFLAGS += ${MKL_CXXFLAGS}
+endif
+
+ifeq ($(USE_OPENMP),1)
+CXXFLAGS += -DUSE_OPENMP
+ifeq ($(USE_MKL),0)
+CXXFLAGS += -fopenmp
+endif
+endif
+
+ifeq ($(USE_LONG),1)
+CXXFLAGS += -DUSE_LONG
+endif
+
+ifeq ($(HAS_METIS),1)
+CXXFLAGS += -DHAS_METIS
+INCL_PATHS += ${METIS_INCL_PATH}
+endif
+
+ifeq ($(USE_MATERN),1)
+CXXFLAGS += -DUSE_MATERN
+FFLAGS += -O2
+LIBS += -lm -lstdc++
+ifeq ($(SYS),LINUX)
+LIBS += -lrt
+endif
+MAKE_BESSELK += make besselk
+OBJS_BESSELK += besselk.o
+OBJS += IsotropicMatern.o ChordalMatern.o
+endif
+
+all:
+	${MAKE_BESSELK}
+	make ${OBJS}
+	ld -o Kernels.o -r ${OBJS} ${OBJS_BESSELK}
+
+besselk:
+	${CXX} BesselkConfig.cpp -o BesselkConfig.ex ${CXXFLAGS} ${INCL_PATHS} ${LIB_PATHS} ${LIBS}
+	./BesselkConfig.ex | sed s/e/d/ > besselk.f.in2
+	cat besselk.f.in  | sed -n '1,73p'     >  besselk.f
+	cat besselk.f.in2 | sed -n '1,5p'      >> besselk.f
+	cat besselk.f.in  | sed -n '74,697p'   >> besselk.f
+	cat besselk.f.in2 | sed -n '6,21p'     >> besselk.f
+	cat besselk.f.in  | sed -n '698,6869p' >> besselk.f
+	${FC} -c besselk.f ${FFLAGS}
+
+%.o: %.cpp
+	${CXX} -c $< ${CXXFLAGS} ${INCL_PATHS}
+
+clean:
+	rm -f *.o *~
+
+uninstall:
+	rm -f Makefile *.ex

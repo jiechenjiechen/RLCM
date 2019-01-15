@@ -1,0 +1,222 @@
+LINKER     = 
+CXXFLAGS   = -O2 -Wall -std=c++0x
+OBJS       = KRR_Common.o
+LIBS       = -lcmatrix -lm -lstdc++
+LIB_PATHS  = -L${CMATRIX_DIR}/lib
+INCL_PATHS = -I${CMATRIX_DIR}/include
+EXES       = KRR_Standard_IsotropicGaussian_DPoint.ex \
+             KRR_Standard_IsotropicGaussian_SPoint.ex \
+             KRR_Standard_IsotropicLaplace_DPoint.ex \
+             KRR_Standard_IsotropicLaplace_SPoint.ex \
+             KRR_Standard_ProductLaplace_DPoint.ex \
+             KRR_Standard_ProductLaplace_SPoint.ex \
+             KRR_Standard_InvMultiquadric_DPoint.ex \
+             KRR_Standard_InvMultiquadric_SPoint.ex \
+             KRR_Nystrom_IsotropicGaussian_DPoint.ex \
+             KRR_Nystrom_IsotropicGaussian_SPoint.ex \
+             KRR_Nystrom_IsotropicLaplace_DPoint.ex \
+             KRR_Nystrom_IsotropicLaplace_SPoint.ex \
+             KRR_Nystrom_ProductLaplace_DPoint.ex \
+             KRR_Nystrom_ProductLaplace_SPoint.ex \
+             KRR_Nystrom_InvMultiquadric_DPoint.ex \
+             KRR_Nystrom_InvMultiquadric_SPoint.ex \
+             KRR_Fourier_IsotropicGaussian_DPoint.ex \
+             KRR_Fourier_IsotropicGaussian_SPoint.ex \
+             KRR_Fourier_IsotropicLaplace_DPoint.ex \
+             KRR_Fourier_IsotropicLaplace_SPoint.ex \
+             KRR_Fourier_ProductLaplace_DPoint.ex \
+             KRR_Fourier_ProductLaplace_SPoint.ex \
+             KRR_BlockDiag_IsotropicGaussian_DPoint.ex \
+             KRR_BlockDiag_IsotropicGaussian_SPoint.ex \
+             KRR_BlockDiag_IsotropicLaplace_DPoint.ex \
+             KRR_BlockDiag_IsotropicLaplace_SPoint.ex \
+             KRR_BlockDiag_ProductLaplace_DPoint.ex \
+             KRR_BlockDiag_ProductLaplace_SPoint.ex \
+             KRR_BlockDiag_InvMultiquadric_DPoint.ex \
+             KRR_BlockDiag_InvMultiquadric_SPoint.ex \
+             KRR_RLCM_IsotropicGaussian_DPoint.ex \
+             KRR_RLCM_IsotropicGaussian_SPoint.ex \
+             KRR_RLCM_IsotropicLaplace_DPoint.ex \
+             KRR_RLCM_IsotropicLaplace_SPoint.ex \
+             KRR_RLCM_ProductLaplace_DPoint.ex \
+             KRR_RLCM_ProductLaplace_SPoint.ex \
+             KRR_RLCM_InvMultiquadric_DPoint.ex \
+             KRR_RLCM_InvMultiquadric_SPoint.ex \
+
+ifeq ($(SYS),LINUX)
+LIBS += -lrt
+endif
+
+ifeq ($(USE_OPENBLAS),1)
+CXXFLAGS += -DUSE_OPENBLAS
+INCL_PATHS += ${OPENBLAS_INCL_PATH}
+else ifeq ($(USE_ESSL),1)
+CXXFLAGS += ${ESSL_CXXFLAGS}
+INCL_PATHS += ${ESSL_INCL_PATH}
+else ifeq ($(USE_MKL),1)
+CXXFLAGS += ${MKL_CXXFLAGS}
+endif
+
+ifeq ($(USE_OPENMP),1)
+CXXFLAGS += -DUSE_OPENMP
+ifeq ($(USE_MKL),0)
+CXXFLAGS += -fopenmp
+endif
+endif
+
+ifeq ($(USE_OPENBLAS),1)
+LIBS += ${OPENBLAS_LIBS} -lpthread -lgfortran
+LIB_PATHS += ${OPENBLAS_LIB_PATH}
+else ifeq ($(USE_ESSL),1)
+LIBS += ${ESSL_LIBS}
+LIB_PATHS += ${ESSL_LIB_PATH}
+else ifeq ($(USE_MKL),1)
+LIBS += ${MKL_LIBS}
+else ifeq ($(USE_OPENMP),1)
+LIBS += -llapack -lblas -lgomp
+else
+LIBS += -llapack -lblas
+endif
+
+ifeq ($(USE_LONG),1)
+CXXFLAGS += -DUSE_LONG
+endif
+
+ifeq ($(HAS_METIS),1)
+CXXFLAGS += -DHAS_METIS
+INCL_PATHS += ${METIS_INCL_PATH}
+LIBS += -lmetis
+LIB_PATHS += ${METIS_LIB_PATH}
+endif
+
+ifeq ($(USE_MATERN),1)
+LINKER += ${FC}
+CXXFLAGS += -DUSE_MATERN
+else
+LINKER += ${CXX}
+endif
+
+all: ${EXES}
+
+KRR_Standard_IsotropicGaussian_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_IsotropicGaussian_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_IsotropicLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_IsotropicLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_ProductLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_ProductLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_InvMultiquadric_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Standard_InvMultiquadric_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Standard.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_IsotropicGaussian_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_IsotropicGaussian_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_IsotropicLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_IsotropicLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_ProductLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_ProductLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_InvMultiquadric_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Nystrom_InvMultiquadric_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Nystrom.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_IsotropicGaussian_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_IsotropicGaussian_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_IsotropicLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_IsotropicLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_ProductLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_Fourier_ProductLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_Fourier.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_IsotropicGaussian_DPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_IsotropicGaussian_SPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_IsotropicLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_IsotropicLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_ProductLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_ProductLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_InvMultiquadric_DPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_BlockDiag_InvMultiquadric_SPoint.ex: ${OBJS}
+	${LINKER} KRR_BlockDiag.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_IsotropicGaussian_DPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_IsotropicGaussian_SPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=IsotropicGaussian -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_IsotropicLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_IsotropicLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=IsotropicLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_ProductLaplace_DPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_ProductLaplace_SPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=ProductLaplace -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_InvMultiquadric_DPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=DPoint -D PointArrayFormat=DPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+KRR_RLCM_InvMultiquadric_SPoint.ex: ${OBJS}
+	${LINKER} KRR_RLCM.cpp -o $@ -D KernelType=InvMultiquadric -D PointFormat=SPoint -D PointArrayFormat=SPointArray ${CXXFLAGS} ${INCL_PATHS} ${OBJS} ${LIB_PATHS} ${LIBS}
+
+%.o: %.cpp
+	${LINKER} -c $< ${CXXFLAGS} ${INCL_PATHS}
+
+clean:
+	rm -f *.o *~
+
+uninstall:
+	rm -rf Makefile *.ex*

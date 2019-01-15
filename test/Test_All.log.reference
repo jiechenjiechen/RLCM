@@ -1,0 +1,1494 @@
++ Test_Common.ex 3
++---------------------------------------------------------------+
+|  Test_Common.cpp                                              |
++---------------------------------------------------------------+
+Test Square() : Discrepancy in return value 0
+Test Parity() : Discrepancy in return value 0
+Test UniformRandom01() : Run Test_Common_RandomNumbers.m to verify correctness.
+Test StandardNormal() : Run Test_Common_RandomNumbers.m to verify correctness.
+Test StudentT1() : Run Test_Common_RandomNumbers.m to verify correctness.
+Test MultivariateStudentT1() : Run Test_Common_RandomNumbers.m to verify correctness.
+Test RandomSech() : Run Test_Common_RandomNumbers.m to verify correctness.
+Test RandPerm() : 9 4 0 1 3. (There must show 5 non-repeating integers betwenn 0 and 9.)
+Test CompareNaturalOrderLess() : Discrepancy in return value 0
+Test CompareNaturalOrderLess() : Discrepancy in return value 0
+Test CompareNaturalOrderLess() : Discrepancy in return value 0
+Test CompareNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderLess() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderLess() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderLess() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareIntegerNaturalOrderGreater() : Discrepancy in return value 0
+Test CompareByMagnitudeLess() : Discrepancy in return value 0
+Test CompareByMagnitudeLess() : Discrepancy in return value 0
+Test CompareByMagnitudeLess() : Discrepancy in return value 0
+Test CompareByMagnitudeGreater() : Discrepancy in return value 0
+Test CompareByMagnitudeGreater() : Discrepancy in return value 0
+Test CompareByMagnitudeGreater() : Discrepancy in return value 0
+Test SelectLeftHalfPlane() : Discrepancy in return value 0
+Test SelectLeftHalfPlane() : Discrepancy in return value 0
+Test SelectRightHalfPlane() : Discrepancy in return value 0
+Test SelectRightHalfPlane() : Discrepancy in return value 0
+Test CompareElm1Idx() : Discrepancy in return value 0
+Test CompareElm1Idx() : Discrepancy in return value 0
+Test CompareElm1Idx() : Discrepancy in return value 0
+Test CompareElm2Idx() : Discrepancy in return value 0
+Test CompareElm2Idx() : Discrepancy in return value 0
+Test CompareElm2Idx() : Discrepancy in return value 0
+Test CompareElm2Above() : Discrepancy in return value 0
+Test CompareElm2Above() : Discrepancy in return value 0
+Test CompareElm2Above() : Discrepancy in return value 0
+Test CompareElm2Below() : Discrepancy in return value 0
+Test CompareElm2Below() : Discrepancy in return value 0
+Test CompareElm2Below() : Discrepancy in return value 0
+Test CompareElm3Dim() : Discrepancy in return value 0
+Test CompareElm3Dim() : Discrepancy in return value 0
+Test CompareElm3Dim() : Discrepancy in return value 0
+Test Swap() : Discrepancy in results 0, 0
+Test Max() : Discrepancy in results 0
+Test Min() : Discrepancy in results 0
+Test zbesk_() : Success.
++ Test_LibSVM_IO.ex 3
++---------------------------------------------------------------+
+|  Test_LibSVM_IO.cpp                                           |
++---------------------------------------------------------------+
+Test ReadData() for dense format : Discrepancy in X 0
+Test ReadData() for dense format : Discrepancy in y 0
+Test ReadData() for sparse format : Discrepancy in start 0
+Test ReadData() for sparse format : Discrepancy in idx 0
+Test ReadData() for sparse format : Discrepancy in X 0
+Test ReadData() for sparse format : Discrepancy in y 0
++ Test_LibSVM_IO_binary.ex 3
++---------------------------------------------------------------+
+|  Test_LibSVM_IO_binary.cpp                                    |
++---------------------------------------------------------------+
+Test ReadData() : Discrepancy in X 1.17422e-09
+Test ReadData() : Discrepancy in y 0
++ Test_METIS_IO.ex 3
++---------------------------------------------------------------+
+|  Test_METIS_IO.cpp                                            |
++---------------------------------------------------------------+
+Test ReadData() : Discrepancy in start 0
+Test ReadData() : Discrepancy in idx 0
+Test ReadData() : Discrepancy in A 0
++ Test_CSR_IO_binary.ex 3
++---------------------------------------------------------------+
+|  Test_CSR_IO_binary.cpp                                       |
++---------------------------------------------------------------+
+Test ReadData() : Discrepancy in start 0
+Test ReadData() : Discrepancy in idx 0
+Test ReadData() : Discrepancy in A 0
++ Test_Raw_binary.ex 3
++---------------------------------------------------------------+
+|  Test_Raw_binary.cpp                                          |
++---------------------------------------------------------------+
+Test ReadData() : Discrepancy in y 1.05471e-15
++ Test_spblas.ex 3
++---------------------------------------------------------------+
+|  Test_spblas.cpp                                              |
++---------------------------------------------------------------+
+Test sp_n_ds2d() : Discrepancy in return vector 0
+Test sp_d_ddot() : Discrepancy in return value 0
+Test sp_s_ddot() : Discrepancy in return value 0
+Test sp_d_ddist() : Discrepancy in return value 0
+Test sp_s_ddist() : Discrepancy in return value 0
+Test sp_d_ddists() : Discrepancy in return value 0
+Test sp_s_ddists() : Discrepancy in return value 0
+Test sp_d_dchi2() : Discrepancy in return value 0
+Test sp_s_dchi2() : Discrepancy in return value 0
+Test sp_d_dgemv() : Discrepancy in return vector 5.55112e-17
+Test sp_d_dgemv() : Discrepancy in return vector 5.55112e-17
+Test sp_s_dgemv() : Discrepancy in return vector 5.55112e-17
+Test sp_s_dgemv() : Discrepancy in return vector 5.55112e-17
+Test sp_d_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_d_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_d_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_d_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_s_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_s_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_s_dgemm() : Discrepancy in return matrix 2.77556e-17
+Test sp_s_dgemm() : Discrepancy in return matrix 2.77556e-17
++ Test_PCG.ex 3 100
++---------------------------------------------------------------+
+|  Test_PCG.cpp                                                 |
++---------------------------------------------------------------+
+Test Solve() : No preconditioner
+Number of iterations: 51
+Actural relative residual: 4.46374e-14
+Relative residual reported by the solver: 4.40248e-14
+Relative residual history is written to file Test_PCG.relres1. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : No preconditioner, convergence monitored with true residual
+Number of iterations: 51
+Actural relative residual: 4.46374e-14
+Relative residual reported by the solver: 4.46374e-14
+Relative residual history is written to file Test_PCG.relres2. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : With preconditioner
+Number of iterations: 38
+Actural relative residual: 1.78045e-09
+Relative residual reported by the solver: 1.78045e-09
+Relative residual history is written to file Test_PCG.relres3. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : With preconditioner, convergence monitored with true residual
+Number of iterations: 38
+Actural relative residual: 1.78045e-09
+Relative residual reported by the solver: 1.78045e-09
+Relative residual history is written to file Test_PCG.relres4. Use the Matlab program Test_PCG.m to plot it out!
++ Test_PCG.ex 3 20
++---------------------------------------------------------------+
+|  Test_PCG.cpp                                                 |
++---------------------------------------------------------------+
+Test Solve() : No preconditioner
+Number of iterations: 20
+Actural relative residual: 0.05
+Relative residual reported by the solver: 0.05
+Relative residual history is written to file Test_PCG.relres1. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : No preconditioner, convergence monitored with true residual
+Number of iterations: 20
+Actural relative residual: 0.05
+Relative residual reported by the solver: 0.05
+Relative residual history is written to file Test_PCG.relres2. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : With preconditioner
+Number of iterations: 20
+Actural relative residual: 0.0252592
+Relative residual reported by the solver: 0.0252592
+Relative residual history is written to file Test_PCG.relres3. Use the Matlab program Test_PCG.m to plot it out!
+Test Solve() : With preconditioner, convergence monitored with true residual
+Number of iterations: 20
+Actural relative residual: 0.0252592
+Relative residual reported by the solver: 0.0252592
+Relative residual history is written to file Test_PCG.relres4. Use the Matlab program Test_PCG.m to plot it out!
++ Test_GMRES.ex 3 100
++---------------------------------------------------------------+
+|  Test_GMRES.cpp                                               |
++---------------------------------------------------------------+
+Test Solve() : No preconditioner
+Restart cycle: 100
+Number of iterations: 51
+Actural relative residual: 2.68757e-15
+Relative residual reported by the solver: 1.11022e-15
+Relative residual history is written to file Test_GMRES.relres1. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : With preconditioner
+Restart cycle: 100
+Number of iterations: 38
+Actural relative residual: 1.74e-09
+Relative residual reported by the solver: 1.74e-09
+Relative residual history is written to file Test_GMRES.relres2. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : No preconditioner
+Restart cycle: 10
+Number of iterations: 100
+Actural relative residual: 0.00447336
+Relative residual reported by the solver: 0.00447336
+Relative residual history is written to file Test_GMRES.relres3. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : With preconditioner
+Restart cycle: 10
+Number of iterations: 100
+Actural relative residual: 0.00188655
+Relative residual reported by the solver: 0.00188655
+Relative residual history is written to file Test_GMRES.relres4. Use the Matlab program Test_GMRES.m to plot it out!
++ Test_GMRES.ex 3 25
++---------------------------------------------------------------+
+|  Test_GMRES.cpp                                               |
++---------------------------------------------------------------+
+Test Solve() : No preconditioner
+Restart cycle: 100
+Number of iterations: 25
+Actural relative residual: 0.0134535
+Relative residual reported by the solver: 0.0134535
+Relative residual history is written to file Test_GMRES.relres1. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : With preconditioner
+Restart cycle: 100
+Number of iterations: 25
+Actural relative residual: 0.00580931
+Relative residual reported by the solver: 0.00580931
+Relative residual history is written to file Test_GMRES.relres2. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : No preconditioner
+Restart cycle: 10
+Number of iterations: 25
+Actural relative residual: 0.0151883
+Relative residual reported by the solver: 0.0151883
+Relative residual history is written to file Test_GMRES.relres3. Use the Matlab program Test_GMRES.m to plot it out!
+Test Solve() : With preconditioner
+Restart cycle: 10
+Number of iterations: 25
+Actural relative residual: 0.00657361
+Relative residual reported by the solver: 0.00657361
+Relative residual history is written to file Test_GMRES.relres4. Use the Matlab program Test_GMRES.m to plot it out!
++ Test_Lanczos.ex 3
++---------------------------------------------------------------+
+|  Test_Lanczos.cpp                                             |
++---------------------------------------------------------------+
+Test Run() : Full reorth, no early stopping
+Error in calculating norm(v): 0
+Error in the actual number of iterations: 0
+Difference between AV and VT: 5.00757e-16
+Difference between VV and Eye: 1.12674e-15
+Test Run() : Full reorth, early stopping
+Difference between Au and su: truth vs computed
+[0]  2.2341024e-03  2.2341024e-03
+[1]  4.9566447e-02  4.9566447e-02
+[2]  9.7764438e-02  9.7764438e-02
+[3]  1.4358977e-01  1.4358977e-01
+[4]  1.8588861e-01  1.8588861e-01
+[5]  2.2361420e-01  2.2361420e-01
+[6]  2.5583580e-01  2.5583580e-01
+[7]  2.8175921e-01  2.8175921e-01
+[8]  3.0074568e-01  3.0074568e-01
+[9]  3.1232746e-01  3.1232746e-01
+[10]  3.1621920e-01  3.1621920e-01
+[11]  3.1232496e-01  3.1232496e-01
+[12]  3.0074056e-01  3.0074056e-01
+[13]  2.8175117e-01  2.8175117e-01
+[14]  2.5582434e-01  2.5582434e-01
+[15]  2.2359843e-01  2.2359843e-01
+[16]  1.8586691e-01  1.8586691e-01
+[17]  1.4355882e-01  1.4355882e-01
+[18]  9.7715918e-02  9.7715918e-02
+[19]  4.9466968e-02  4.9466968e-02
+Test Run() : Partial reorth, no early stopping
+Difference between AV and VT: 1.84781e-17
+Difference between VV and Eye: 2.17519e-15
+Test Run() : Partial reorth, early stopping
+Difference between Au and su: truth vs computed
+[0]  2.2341024e-03  2.2341024e-03
+[1]  4.9566447e-02  4.9566447e-02
+[2]  9.7764438e-02  9.7764438e-02
+[3]  1.4358977e-01  1.4358977e-01
+[4]  1.8588861e-01  1.8588861e-01
+[5]  2.2361420e-01  2.2361420e-01
+[6]  2.5583580e-01  2.5583580e-01
+[7]  2.8175921e-01  2.8175921e-01
+[8]  3.0074568e-01  3.0074568e-01
+[9]  3.1232746e-01  3.1232746e-01
+[10]  3.1621920e-01  3.1621920e-01
+[11]  3.1232496e-01  3.1232496e-01
+[12]  3.0074056e-01  3.0074056e-01
+[13]  2.8175117e-01  2.8175117e-01
+[14]  2.5582434e-01  2.5582434e-01
+[15]  2.2359843e-01  2.2359843e-01
+[16]  1.8586691e-01  1.8586691e-01
+[17]  1.4355882e-01  1.4355882e-01
+[18]  9.7715918e-02  9.7715918e-02
+[19]  4.9466968e-02  4.9466968e-02
++ Test_IsotropicGaussian.ex 3
++---------------------------------------------------------------+
+|  Test_IsotropicGaussian.cpp                                   |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 2.22045e-16
+Test Eval() : Discrepancy in return value 2.22045e-16
++ Test_IsotropicLaplace.ex 3
++---------------------------------------------------------------+
+|  Test_IsotropicLaplace.cpp                                    |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 0
+Test Eval() : Discrepancy in return value 0
++ Test_IsotropicMatern.ex 3
++---------------------------------------------------------------+
+|  Test_IsotropicMatern.cpp                                     |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 8.88178e-16
+Test Eval() : Discrepancy in return value 8.88178e-16
++ Test_ChordalMatern.ex 3
++---------------------------------------------------------------+
+|  Test_ChordalMatern.cpp                                       |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 2.44249e-15
+Test Eval() : Discrepancy in return value 2.44249e-15
++ Test_AnisotropicGaussian.ex 3
++---------------------------------------------------------------+
+|  Test_AnisotropicGaussian.cpp                                 |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 5.55112e-17
+Test Eval() : Discrepancy in return value 5.55112e-17
++ Test_ProductLaplace.ex 3
++---------------------------------------------------------------+
+|  Test_ProductLaplace.cpp                                      |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 2.22045e-16
+Test Eval() : Discrepancy in return value 2.22045e-16
++ Test_InvMultiquadric.ex 3
++---------------------------------------------------------------+
+|  Test_InvMultiquadric.cpp                                     |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 2.22045e-16
+Test Eval() : Discrepancy in return value 2.22045e-16
++ Test_Chi2.ex 3
++---------------------------------------------------------------+
+|  Test_Chi2.cpp                                                |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 0
+Test Eval() : Discrepancy in return value 0
++ Test_Polynomial.ex 3
++---------------------------------------------------------------+
+|  Test_Polynomial.cpp                                          |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 0
+Test Eval() : Discrepancy in return value 0
++ Test_SixHumps.ex 3
++---------------------------------------------------------------+
+|  Test_SixHumps.cpp                                            |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 1.11022e-16
++ Test_Bird.ex 3
++---------------------------------------------------------------+
+|  Test_Bird.cpp                                                |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 0
++ Test_NoName.ex 3
++---------------------------------------------------------------+
+|  Test_NoName.cpp                                              |
++---------------------------------------------------------------+
+Test Eval() : Discrepancy in return value 5.55112e-17
++ Test_DVector.ex 3
++---------------------------------------------------------------+
+|  Test_DVector.cpp                                             |
++---------------------------------------------------------------+
+Test GetEntry() : Discrepancy in return value 0
+Test GetBlock() : Discrepancy in return vector 0
+Test GetBlock() : Discrepancy in return vector 0
+Test GetBlock() : Discrepancy in return vector 0
+Test Permute() : Discrepancy in return vector 0
+Test iPermute() : Discrepancy in return vector 0
+Test Sort() : Discrepancy in return vector 0
+Test SortByMagnitude() : Result is correct
+Test FindLargerThan() : Result is correct
+Test Negate() : Discrepancy in return vector 0
+Test Negate() : Discrepancy in return vector 0
+Test Add() : Discrepancy in return vector 0
+Test Add() : Discrepancy in return vector 0
+Test Add() : Discrepancy in return vector 5.55112e-17
+Test Add() : Discrepancy in return vector 5.55112e-17
+Test Subtract() : Discrepancy in return vector 0
+Test Subtract() : Discrepancy in return vector 0
+Test Subtract() : Discrepancy in return vector 2.498e-16
+Test Subtract() : Discrepancy in return vector 2.498e-16
+Test Multiply() : Discrepancy in return vector 0
+Test Multiply() : Discrepancy in return vector 0
+Test Multiply() : Discrepancy in return vector 2.25514e-17
+Test Multiply() : Discrepancy in return vector 2.25514e-17
+Test Divide() : Discrepancy in return vector 0
+Test Divide() : Discrepancy in return vector 0
+Test Divide() : Discrepancy in return vector 5.55112e-17
+Test Divide() : Discrepancy in return vector 5.55112e-17
+Test InProd() : Discrepancy in return value 0
+Test Abs() : Discrepancy in return vector 0
+Test Abs() : Discrepancy in return vector 0
+Test Sqrt() : Discrepancy in return vector 0
+Test Sqrt() : Discrepancy in return vector 0
+Test Square() : Discrepancy in return vector 4.78784e-16
+Test Square() : Discrepancy in return vector 4.78784e-16
+Test Inv() : Discrepancy in return vector 0
+Test Inv() : Discrepancy in return vector 0
+Test Norm2() : Discrepancy in return value 4.44089e-16
+Test Norm1() : Discrepancy in return value 8.88178e-16
+Test Min() : Result is correct
+Test Max() : Result is correct
+Test Sum() : Discrepancy in return value 4.44089e-16
+Test Mean() : Discrepancy in return value 5.55112e-17
+Test BuildResponseVector() : Discrepancy in return vector 8.88178e-16
++ Test_DMatrix.ex 3
++---------------------------------------------------------------+
+|  Test_DMatrix.cpp                                             |
++---------------------------------------------------------------+
+Test GetEntry() : Discrepancy in return value 0
+Test GetColumn() : Discrepancy in return vector 0
+Test GetColumns() : Discrepancy in return matrix 0
+Test GetRow() : Discrepancy in return vector 0
+Test GetBlock() : Discrepancy in return matrix 0
+Test SetEntry() : Discrepancy in return matrix 0
+Test AddToEntry() : Discrepancy in return matrix 5.55112e-17
+Test SetColumn() : Discrepancy in return matrix 0
+Test SetRow() : Discrepancy in return matrix 0
+Test SetBlock() : Discrepancy in return matrix 0
+Test SetIdentity() : Discrepancy in return matrix 0
+Test SetMultIdentity() : Discrepancy in return matrix 0
+Test SetConstVal() : Discrepancy in return matrix 0
+Test MakeDiag() : Discrepancy in return matrix 0
+Test Transpose() : Discrepancy in return matrix 0
+Test Transpose() : Discrepancy in return matrix 0
+Test Symmetrize() : Discrepancy in return matrix 0
+Test Symmetrize() : Discrepancy in return matrix 0
+Test Negate() : Discrepancy in return matrix 0
+Test Negate() : Discrepancy in return matrix 0
+Test Add() : Discrepancy in return matrix 2.77556e-17
+Test Add() : Discrepancy in return matrix 2.77556e-17
+Test Subtract() : Discrepancy in return matrix 1.66533e-16
+Test Subtract() : Discrepancy in return matrix 1.66533e-16
+Test Add() : Discrepancy in return matrix 0
+Test Add() : Discrepancy in return matrix 0
+Test Subtract() : Discrepancy in return matrix 0
+Test Subtract() : Discrepancy in return matrix 0
+Test Multiply() : Discrepancy in return matrix 5.55112e-17
+Test Multiply() : Discrepancy in return matrix 5.55112e-17
+Test Divide() : Discrepancy in return matrix 1.08247e-15
+Test Divide() : Discrepancy in return matrix 1.08247e-15
+Test Multiply() : Discrepancy in return matrix 0
+Test Multiply() : Discrepancy in return matrix 0
+Test Divide() : Discrepancy in return matrix 0
+Test Divide() : Discrepancy in return matrix 0
+Test AddDiagonal() : Discrepancy in return matrix 1.16573e-15
+Test AddDiagonal() : Discrepancy in return matrix 1.16573e-15
+Test SubtractDiagonal() : Discrepancy in return matrix 4.44089e-16
+Test SubtractDiagonal() : Discrepancy in return matrix 4.44089e-16
+Test Cos() : Discrepancy in return matrix 1.33227e-15
+Test Cos() : Discrepancy in return matrix 1.33227e-15
+Test Sqrt() : Discrepancy in return matrix 3.33067e-16
+Test Sqrt() : Discrepancy in return matrix 3.33067e-16
+Test Log() : Discrepancy in return matrix 2.22045e-15
+Test Log() : Discrepancy in return matrix 2.22045e-15
+Test Sum() : Discrepancy in return vector 0
+Test Sum() : Discrepancy in return vector 2.66454e-15
+Test Prod() : Discrepancy in return vector 0
+Test Prod() : Discrepancy in return vector 0
+Test OuterProduct() : Discrepancy in return matrix 6.93889e-18
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test DGEMV() : Discrepancy in return vector 1.66533e-16
+Test DGEMV() : Discrepancy in return vector 4.996e-16
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test DGEMM() : Discrepancy in return matrix 4.44089e-16
+Test DGEMM() : Discrepancy in return matrix 4.44089e-16
+Test DGEMM() : Discrepancy in return matrix 4.44089e-16
+Test DGEMM() : Discrepancy in return matrix 4.44089e-16
+Test Mldivide() : Relative residual 1.8917e-17
+Test Mldivide() : Relative residual 1.94992e-17
+Test Mldivide() : Relative residuals 1.8917e-17 1.86209e-16
+Test Mldivide() : Relative residuals 1.94992e-17 8.3275e-17
+Test Mldivide() : Relative residual 1.72288e-16
+Test Mldivide() : Relative residuals 1.72288e-16 1.94609e-16
+Test Mldivide() : Discrepancy in relative residual 7.46104e-16
+Test Mldivide() : Discrepancy in relative residuals 7.46104e-16 1.13496e-16
+Test DGETRS() : Relative residual 1.86209e-16
+Test DGETRS() : Relative residuals 1.8917e-17 1.86209e-16
+Test DGETRS() : Relative residual 1.17769e-16
+Test DGETRS() : Relative residuals 1.61627e-16 8.3275e-17
+Test DPOTRS() : Relative residual 1.6655e-16
+Test DPOTRS() : Relative residuals 1.51631e-16 1.6655e-16
+Test DTRSV() : Relative residual 0
+Test DTRSM() : Relative residuals 1.8917e-17 1.17769e-16
+Test Chol() : Residual 2.77556e-16
+Test SymEig() : Residuals 3.9693e-16 6.84387e-16 2.22045e-16
+Test SymEigBIndef() : Residuals 8.88179e-17 6.37525e-16 4.53146e-16
+Test RealSchur() : Residual 2.53313e-15
+Test Orth() : Residual 6.66134e-16
+Test Rank() : Discrepancy in return value 0
+Test Cond2() : Discrepancy in return value 1.77636e-15
+Test Norm2() : Discrepancy in return value 0
+Test NormF() : Discrepancy in return value 4.44089e-16
+Test Diag() : Discrepancy in return value 0
+Test Tr() : Discrepancy in return value 0
+Test Det() : Discrepancy in return value 2.22045e-16
+Test Det() : Discrepancy in return value 2.22045e-16
+Test Det() : Discrepancy in return value 2.22045e-16
+Test Det() : Discrepancy in return value 2.22045e-16
+Test BuildKernelMatrix() : Discrepancy in return matrix 2.08731e-15
+Test BuildKernelMatrix() : Discrepancy in return matrix 2.90798e-15
++ Test_SMatrix.ex 3
++---------------------------------------------------------------+
+|  Test_SMatrix.cpp                                             |
++---------------------------------------------------------------+
+Test GetBlock() : Discrepancy in return matrix 0
+Test GetBlock() : Discrepancy in return matrix 0
+Test GetBlock() : Discrepancy in return matrix 0
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test Diag() : Discrepancy in return vector 0
+Test Diag() : Discrepancy in return vector 0
+Test Divide() : Discrepancy in return matrix 0
+Test Divide() : Discrepancy in return matrix 0
+Test SymmetricDivide() : Discrepancy in return matrix 0
+Test SymmetricDivide() : Discrepancy in return matrix 0
++ Test_SPoint.ex 3
++---------------------------------------------------------------+
+|  Test_SPoint.cpp                                              |
++---------------------------------------------------------------+
+Test InProd() : Discrepancy in return value 0
+Test InProd() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test KernelFuncChi2() : Discrepancy in return value 0
+Test KernelFuncChi2() : Discrepancy in return value 0
++ Test_DPoint.ex 3
++---------------------------------------------------------------+
+|  Test_DPoint.cpp                                              |
++---------------------------------------------------------------+
+Test Normalize() : Discrepancy in return vector 0
+Test InProd() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist1() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test Dist2() : Discrepancy in return value 0
+Test Subtract() : Discrepancy in return vector 0
+Test Subtract() : Discrepancy in return vector 0
+Test AverageWith() : Discrepancy in return vector 1.38778e-17
+Test AverageWith() : Discrepancy in return vector 1.38778e-17
+Test KernelFuncChi2() : Discrepancy in return value 0
++ Test_DPointArray.ex 3
++---------------------------------------------------------------+
+|  Test_DPointArray.cpp                                         |
++---------------------------------------------------------------+
+Test GetPoint() : Discrepancy in return vector 0
+Test GetSubset() : Discrepancy in return matrix 0
+Test GetSubset() : Discrepancy in return matrix 0
+Test AsDMatrix() : Discrepancy in return matrix 0
+Test Center() : Discrepancy in return vector 8.32667e-17
+Test StdvDist() : Discrepancy in return value 2.22045e-16
+Test MaxPointNorm2() : Discrepancy in return value 0
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test RandomBipartition() : Part 1, Error in X 0
+Test RandomBipartition() : Part 2, Error in perm 0
+Test RandomBipartition() : Part 3, Error in sign 0
+Test PCABipartition() : Part 0, Discrepancy in normal 9.99201e-16
+Test PCABipartition() : Part 1, Error in X 0
+Test PCABipartition() : Part 2, Error in perm 0
+Test PCABipartition() : Part 3, Error in sign 0
+Test RandomBipartition() : Part 1, Error in X 0
+Test RandomBipartition() : Part 2, Error in perm 0
+Test RandomBipartition() : Part 3, Error in sign 0
+Test PCABipartition() : Part 0, Discrepancy in normal 2.498e-15
+Test PCABipartition() : Part 1, Error in X 0
+Test PCABipartition() : Part 2, Error in perm 0
+Test PCABipartition() : Part 3, Error in sign 0
+Test ComputeBBox() : Discrepancy in return value 0
+Test ComputeBBox() : Discrepancy in return vector 0
+Test BBoxBipartition() : Part 1, Error in X 0
+Test BBoxBipartition() : Part 2, Error in perm 0
+Test BBoxBipartition() : Part 3, Error in sign 0
+Test BBoxBipartition() : Part 4, Discrepancy in normal 0
+Test BBoxBipartition() : Part 5, Discrepancy in offset 0
+Test BBoxBipartition() : Part 6, Error in which_dim 0
+Test SetRegularGrid() : Discrepancy in X 0
++ Test_SPointArray.ex 3
++---------------------------------------------------------------+
+|  Test_SPointArray.cpp                                         |
++---------------------------------------------------------------+
+Test operator= (dense to sparse) : Discrepancy in start array 0
+Test operator= (dense to sparse) : Discrepancy in idx array 0
+Test operator= (dense to sparse) : Discrepancy in val array 0
+Test GetPoint() : Discrepancy in idx array 0
+Test GetPoint() : Discrepancy in val array 0
+Test GetPoint() : Discrepancy in return vector 0
+Test GetSubset() : Discrepancy in start array 0
+Test GetSubset() : Discrepancy in idx array 0
+Test GetSubset() : Discrepancy in val array 0
+Test GetSubset() : Discrepancy in return matrix 0
+Test GetSubset() : Discrepancy in start array 0
+Test GetSubset() : Discrepancy in idx array 0
+Test GetSubset() : Discrepancy in val array 0
+Test GetSubset() : Discrepancy in return matrix 0
+Test AsDMatrix() : Discrepancy in return matrix 0
+Test Center() : Discrepancy in return vector 8.32667e-17
+Test StdvDist() : Discrepancy in return value 2.22045e-16
+Test MaxPointNorm2() : Discrepancy in return value 0
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatVec() : Discrepancy in return vector 5.55112e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test MatMat() : Discrepancy in return matrix 2.77556e-17
+Test RandomBipartition() : Part 1, Error in start 0
+Test RandomBipartition() : Part 1, Error in idx 0
+Test RandomBipartition() : Part 1, Error in val 0
+Test RandomBipartition() : Part 2, Error in perm 0
+Test RandomBipartition() : Part 3, Error in sign 0
+Test PCABipartition() : Part 0, Discrepancy in normal 9.99201e-16
+Test PCABipartition() : Part 1, Error in start 0
+Test PCABipartition() : Part 1, Error in idx 0
+Test PCABipartition() : Part 1, Error in val 0
+Test PCABipartition() : Part 2, Error in perm 0
+Test PCABipartition() : Part 3, Error in sign 0
+Test RandomBipartition() : Part 1, Error in start 0
+Test RandomBipartition() : Part 1, Error in idx 0
+Test RandomBipartition() : Part 1, Error in val 0
+Test RandomBipartition() : Part 2, Error in perm 0
+Test RandomBipartition() : Part 3, Error in sign 0
+Test PCABipartition() : Part 0, Discrepancy in normal 2.498e-15
+Test PCABipartition() : Part 1, Error in start 0
+Test PCABipartition() : Part 1, Error in idx 0
+Test PCABipartition() : Part 1, Error in val 0
+Test PCABipartition() : Part 2, Error in perm 0
+Test PCABipartition() : Part 3, Error in sign 0
++ Test_CMatrix.ex 3 RAND
++---------------------------------------------------------------+
+|  Test_CMatrix.cpp                                             |
++---------------------------------------------------------------+
+
+Part 1: Build matrix from point set
+
+Tree structure ----------
+       Address          Parent  #Child       LeftChild    RightSibling   n  start  end
+      0xf014d0           (nil)       2        0xf01760           (nil)  37      0   36
+      0xf01760        0xf014d0       2        0xf01930        0xf02610  18      0   17
+      0xf01930        0xf01760       0           (nil)        0xf01ce0   9      0    8
+      0xf01ce0        0xf01760       0           (nil)           (nil)   9      9   17
+      0xf02610        0xf014d0       2        0xf01b00           (nil)  19     18   36
+      0xf01b00        0xf02610       0           (nil)        0xf01f50   9     18   26
+      0xf01f50        0xf02610       0           (nil)           (nil)  10     27   36
+Check permutation ----------
+Discrepancy in permuted data points: 0
+Discrepancy in permuted data points 0
+Matrix approximation ----------
+Relative difference in Frobenius norm A[0:8, 0:8]: 0
+Relative difference in Frobenius norm A[9:17, 9:17]: 0
+Relative difference in Frobenius norm A[0:8, 9:17]: 0.0156418
+Relative difference in Frobenius norm A[18:26, 18:26]: 0
+Relative difference in Frobenius norm A[27:36, 27:36]: 0
+Relative difference in Frobenius norm A[18:26, 27:36]: 0.0857132
+Relative difference in Frobenius norm A[0:17, 18:36]: 0.464291
+Matrix-vector multiplication ----------
+[K: Kernel matrix; A: RLCM; DA: dense form of A]
+Discprepancy between A*b and A'*b: 3.25846e-16
+Discprepancy between A*b and DA*b: 4.01472e-16
+Relative difference between A*b and K*b: 0.138397
+Matrix-matrix multiplication ----------
+[K: Kernel matrix; A: RLCM; DA: dense form of A]
+Discprepancy between A*B and A'*B: 0
+Discprepancy between A*B and DA*B: 9.7007e-16
+Relative difference between A*B and K*B: 0.119154
+Inversion ----------
+Relative difference between A*invA and I: 5.90573e-12
+Determinant ----------
+Discrepancy in the log(|det|): 1.77502e-14
+MatVecImplicit ----------
+Discprepancy in return vector: 2.3678e-16
+MatMatImplicit ----------
+Discprepancy in return matrix: 4.58087e-16
+BilinearImplicit ----------
+Discprepancy in return vector: 5.79146e-14
+
+Part 1.5: Unsymmetric matrix
+
+Sqrt ----------
+Relative difference between GG' and A: 1.8099e-12
+Matrix-vector multiplication ----------
+[G: RLCM; DG: dense form of G]
+Discprepancy between G*b and DG*b: 2.70627e-16
+Matrix-matrix multiplication ----------
+[G: RLCM; DG: dense form of G]
+Discprepancy between G*B and DG*B: 1.96945e-16
+Inversion ----------
+Relative difference between G*invG and I: 2.58901e-14
+Determinant ----------
+Discrepancy in the log(|det|): 7.66198e-16
++ Test_CMatrix.ex 3 BBOX
++---------------------------------------------------------------+
+|  Test_CMatrix.cpp                                             |
++---------------------------------------------------------------+
+
+Part 1: Build matrix from point set
+
+Tree structure ----------
+       Address          Parent  #Child       LeftChild    RightSibling   n  start  end  BBox
+     0x136c4d0           (nil)       2       0x136c790           (nil)  37      0   36  [-0.931, +0.941] x [-0.762, +0.919]
+     0x136c790       0x136c4d0       2       0x136cb30       0x136c960  16      0   15  [-0.931, +0.005] x [-0.762, +0.919]
+     0x136cb30       0x136c790       0           (nil)       0x136cd50   7      0    6  [-0.931, +0.005] x [-0.762, +0.079]
+     0x136cd50       0x136c790       0           (nil)           (nil)   9      7   15  [-0.931, +0.005] x [+0.079, +0.919]
+     0x136c960       0x136c4d0       2       0x136cf50           (nil)  21     16   36  [+0.005, +0.941] x [-0.762, +0.919]
+     0x136cf50       0x136c960       0           (nil)       0x136d170   9     16   24  [+0.005, +0.941] x [-0.762, +0.079]
+     0x136d170       0x136c960       0           (nil)           (nil)  12     25   36  [+0.005, +0.941] x [+0.079, +0.919]
+Pivots ----------
+Bounding box: [-0.931108, 0.941186] x [-0.762005, 0.919488]
+Pivots:
+-0.697071 -0.481756 
+-0.697071 0.0787415 
+-0.697071 0.639239 
+-0.228998 -0.341632 
+-0.228998 0.499115 
+0.239076 -0.341632 
+0.239076 0.499115 
+0.707149 -0.341632 
+0.707149 0.499115 
+
+Bounding box: [-0.931108, 0.005039] x [-0.762005, 0.919488]
+Pivots:
+-0.775084 -0.481756 
+-0.463035 -0.481756 
+-0.150985 -0.481756 
+-0.775084 0.0787415 
+-0.463035 0.0787415 
+-0.150985 0.0787415 
+-0.775084 0.639239 
+-0.463035 0.639239 
+-0.150985 0.639239 
+
+Bounding box: [0.005039, 0.941186] x [-0.762005, 0.919488]
+Pivots:
+0.161063 -0.481756 
+0.473112 -0.481756 
+0.785162 -0.481756 
+0.161063 0.0787415 
+0.473112 0.0787415 
+0.785162 0.0787415 
+0.161063 0.639239 
+0.473112 0.639239 
+0.785162 0.639239 
+
+Check permutation ----------
+Discrepancy in permuted data points: 0
+Discrepancy in permuted data points 0
+Matrix approximation ----------
+Relative difference in Frobenius norm A[0:6, 0:6]: 0
+Relative difference in Frobenius norm A[7:15, 7:15]: 0
+Relative difference in Frobenius norm A[0:6, 7:15]: 0.251902
+Relative difference in Frobenius norm A[16:24, 16:24]: 0
+Relative difference in Frobenius norm A[25:36, 25:36]: 0
+Relative difference in Frobenius norm A[16:24, 25:36]: 0.148171
+Relative difference in Frobenius norm A[0:15, 16:36]: 0.533894
+Matrix-vector multiplication ----------
+[K: Kernel matrix; A: RLCM; DA: dense form of A]
+Discprepancy between A*b and A'*b: 1.30155e-16
+Discprepancy between A*b and DA*b: 2.44707e-16
+Relative difference between A*b and K*b: 0.046284
+Matrix-matrix multiplication ----------
+[K: Kernel matrix; A: RLCM; DA: dense form of A]
+Discprepancy between A*B and A'*B: 0
+Discprepancy between A*B and DA*B: 2.58247e-16
+Relative difference between A*B and K*B: 0.127792
+Inversion ----------
+Relative difference between A*invA and I: 5.45473e-13
+Determinant ----------
+Discrepancy in the log(|det|): 2.35418e-15
+MatVecImplicit ----------
+Discprepancy in return vector: 3.65752e-16
+MatMatImplicit ----------
+Discprepancy in return matrix: 2.27883e-16
+BilinearImplicit ----------
+Discprepancy in return vector: 3.32622e-14
+
+Part 1.5: Unsymmetric matrix
+
+Sqrt ----------
+Relative difference between GG' and A: 5.28381e-14
+Matrix-vector multiplication ----------
+[G: RLCM; DG: dense form of G]
+Discprepancy between G*b and DG*b: 1.9799e-16
+Matrix-matrix multiplication ----------
+[G: RLCM; DG: dense form of G]
+Discprepancy between G*B and DG*B: 2.23008e-16
+Inversion ----------
+Relative difference between G*invG and I: 1.90375e-14
+Determinant ----------
+Discrepancy in the log(|det|): 0
++ Test_BMatrix.ex 3 RAND
++---------------------------------------------------------------+
+|  Test_BMatrix.cpp                                             |
++---------------------------------------------------------------+
+
+Part 1: Build matrix from point set
+
+Tree structure ----------
+       Address          Parent  #Child       LeftChild    RightSibling   n  start  end
+     0x1a0f4d0           (nil)       2       0x1a0f760           (nil)  37      0   36
+     0x1a0f760       0x1a0f4d0       2       0x1a0f930       0x1a10610  18      0   17
+     0x1a0f930       0x1a0f760       0           (nil)       0x1a0fce0   9      0    8
+     0x1a0fce0       0x1a0f760       0           (nil)           (nil)   9      9   17
+     0x1a10610       0x1a0f4d0       2       0x1a0fb00           (nil)  19     18   36
+     0x1a0fb00       0x1a10610       0           (nil)       0x1a0ff50   9     18   26
+     0x1a0ff50       0x1a10610       0           (nil)           (nil)  10     27   36
+Check permutation ----------
+Discrepancy in permuted data points: 0
+Discrepancy in permuted data points 0
+Matrix approximation ----------
+Relative difference in Frobenius norm A[0:8, 0:8]: 0
+Relative difference in Frobenius norm A[9:17, 9:17]: 0
+Relative difference in Frobenius norm A[0:8, 9:17]: 1
+Relative difference in Frobenius norm A[18:26, 18:26]: 0
+Relative difference in Frobenius norm A[27:36, 27:36]: 0
+Relative difference in Frobenius norm A[18:26, 27:36]: 1
+Relative difference in Frobenius norm A[0:17, 18:36]: 1
+Matrix-vector multiplication ----------
+[K: Kernel matrix; A: BlockDiag; DA: dense form of A]
+Discprepancy between A*b and A'*b: 1.14768e-16
+Discprepancy between A*b and DA*b: 0
+Relative difference between A*b and K*b: 0.440778
+Matrix-matrix multiplication ----------
+[K: Kernel matrix; A: BlockDiag; DA: dense form of A]
+Discprepancy between A*B and A'*B: 0
+Discprepancy between A*B and DA*B: 0
+Relative difference between A*B and K*B: 0.522953
+Inversion (treated as SPD) ----------
+Relative difference between A*invA and I: 4.95719e-14
+Relative difference between A*(invA*b) and b: 8.33835e-14
+Relative difference between A*(invA*B) and B: 3.51604e-14
+Inversion (treated as GENERAL) ----------
+Relative difference between A*invA and I: 4.52421e-14
+Relative difference between A*(invA*b) and b: 4.91414e-14
+Relative difference between A*(invA*B) and B: 1.38857e-14
+Determinant ----------
+Discrepancy in the log(|det|): 6.47477e-15
+Discrepancy in the log(|det|): 9.24967e-16
+Discrepancy in the log(|det|): 6.01229e-15
+MatVecImplicit ----------
+Discprepancy in return vector: 1.67169e-16
+MatMatImplicit ----------
+Discprepancy in return matrix: 1.3209e-16
++ Test_BMatrix.ex 3 BBOX
++---------------------------------------------------------------+
+|  Test_BMatrix.cpp                                             |
++---------------------------------------------------------------+
+
+Part 1: Build matrix from point set
+
+Tree structure ----------
+       Address          Parent  #Child       LeftChild    RightSibling   n  start  end  BBox
+     0x13cc4d0           (nil)       2       0x13cc790           (nil)  37      0   36  [-0.931, +0.941] x [-0.762, +0.919]
+     0x13cc790       0x13cc4d0       2       0x13ccb30       0x13cc960  16      0   15  [-0.931, +0.005] x [-0.762, +0.919]
+     0x13ccb30       0x13cc790       0           (nil)       0x13ccd50   7      0    6  [-0.931, +0.005] x [-0.762, +0.079]
+     0x13ccd50       0x13cc790       0           (nil)           (nil)   9      7   15  [-0.931, +0.005] x [+0.079, +0.919]
+     0x13cc960       0x13cc4d0       2       0x13ccf50           (nil)  21     16   36  [+0.005, +0.941] x [-0.762, +0.919]
+     0x13ccf50       0x13cc960       0           (nil)       0x13cd170   9     16   24  [+0.005, +0.941] x [-0.762, +0.079]
+     0x13cd170       0x13cc960       0           (nil)           (nil)  12     25   36  [+0.005, +0.941] x [+0.079, +0.919]
+Check permutation ----------
+Discrepancy in permuted data points: 0
+Discrepancy in permuted data points 0
+Matrix approximation ----------
+Relative difference in Frobenius norm A[0:6, 0:6]: 0
+Relative difference in Frobenius norm A[7:15, 7:15]: 0
+Relative difference in Frobenius norm A[0:6, 7:15]: 1
+Relative difference in Frobenius norm A[16:24, 16:24]: 0
+Relative difference in Frobenius norm A[25:36, 25:36]: 0
+Relative difference in Frobenius norm A[16:24, 25:36]: 1
+Relative difference in Frobenius norm A[0:15, 16:36]: 1
+Matrix-vector multiplication ----------
+[K: Kernel matrix; A: BlockDiag; DA: dense form of A]
+Discprepancy between A*b and A'*b: 1.1974e-16
+Discprepancy between A*b and DA*b: 0
+Relative difference between A*b and K*b: 0.281694
+Matrix-matrix multiplication ----------
+[K: Kernel matrix; A: BlockDiag; DA: dense form of A]
+Discprepancy between A*B and A'*B: 0
+Discprepancy between A*B and DA*B: 0
+Relative difference between A*B and K*B: 0.430799
+Inversion (treated as SPD) ----------
+Relative difference between A*invA and I: 7.1501e-14
+Relative difference between A*(invA*b) and b: 4.90108e-14
+Relative difference between A*(invA*B) and B: 7.99377e-14
+Inversion (treated as GENERAL) ----------
+Relative difference between A*invA and I: 5.01917e-14
+Relative difference between A*(invA*b) and b: 2.1528e-14
+Relative difference between A*(invA*B) and B: 8.57564e-14
+Determinant ----------
+Discrepancy in the log(|det|): 2.2978e-15
+Discrepancy in the log(|det|): 2.2978e-15
+Discrepancy in the log(|det|): 2.87226e-15
+MatVecImplicit ----------
+Discprepancy in return vector: 1.99287e-16
+MatMatImplicit ----------
+Discprepancy in return matrix: 1.38445e-16
++ ../app/KRR/KRR_Standard_IsotropicGaussian_DPoint.ex 3 Toy_regr.train Toy_regr.test 1 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 0.364373, time = 0.00154258 7.5131e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 0.272404, time = 9.9712e-05 4.0157e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 0.303904, time = 9.6029e-05 3.8663e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 0.294766, time = 9.3741e-05 3.8625e-05, mem = 37
++ ../app/KRR/KRR_Fourier_IsotropicGaussian_DPoint.ex 3 Toy_regr.train Toy_regr.test 1 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 0.445026, time = 0.000126088 3.5126e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 0.420082, time = 1.8067e-05 1.4941e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 0.380234, time = 1.6535e-05 1.3459e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 0.255025, time = 1.508e-05 1.305e-05, mem = 6
++ ../app/KRR/KRR_Nystrom_IsotropicGaussian_DPoint.ex 3 Toy_regr.train Toy_regr.test 1 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 0.607721, time = 0.000390259 2.9464e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 0.605187, time = 6.9682e-05 1.5941e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 0.292733, time = 5.9613e-05 1.5012e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 0.248037, time = 5.8064e-05 1.444e-05, mem = 6
++ ../app/KRR/KRR_RLCM_IsotropicGaussian_DPoint.ex 3 Toy_regr.train Toy_regr.test 1 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 0.000102915
+KRR_RLCM: r = 6, param = 0.3 1, perf = 0.438, time = 0.000623148 0.000172714, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 0.403722, time = 0.000552121 0.000192358, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 0.298825, time = 0.000559781 0.000193492, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 0.280039, time = 0.000547435 0.000199044, mem = 20.1351
++ ../app/KRR/KRR_BlockDiag_IsotropicGaussian_DPoint.ex 3 Toy_regr.train Toy_regr.test 1 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 0.000115234
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 0.453246, time = 0.000227786 0.000102055, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 0.415891, time = 8.7268e-05 6.4606e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 0.277759, time = 8.4883e-05 6.3344e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 0.282229, time = 8.3171e-05 6.4199e-05, mem = 9.27027
++ ../app/KRR/KRR_Standard_IsotropicGaussian_DPoint.ex 3 Toy_bin.train Toy_bin.test 2 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 100, time = 0.000345994 7.4129e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 100, time = 0.000101862 3.9861e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 100, time = 9.8761e-05 3.7935e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 100, time = 9.6798e-05 3.7854e-05, mem = 37
++ ../app/KRR/KRR_Fourier_IsotropicGaussian_DPoint.ex 3 Toy_bin.train Toy_bin.test 2 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 100, time = 0.000113654 3.4894e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 100, time = 1.8241e-05 1.456e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 100, time = 1.5695e-05 1.2986e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 100, time = 1.4955e-05 1.2495e-05, mem = 6
++ ../app/KRR/KRR_Nystrom_IsotropicGaussian_DPoint.ex 3 Toy_bin.train Toy_bin.test 2 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 80, time = 0.000547317 4.4204e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 80, time = 0.000106682 2.5076e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 100, time = 9.5008e-05 2.2798e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 100, time = 9.1363e-05 2.2603e-05, mem = 6
++ ../app/KRR/KRR_RLCM_IsotropicGaussian_DPoint.ex 3 Toy_bin.train Toy_bin.test 2 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 0.000215527
+KRR_RLCM: r = 6, param = 0.3 1, perf = 100, time = 0.00178599 0.000338782, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 100, time = 0.000962184 0.000329815, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 100, time = 0.000950363 0.000325936, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 100, time = 0.000925354 0.000314156, mem = 20.1351
++ ../app/KRR/KRR_BlockDiag_IsotropicGaussian_DPoint.ex 3 Toy_bin.train Toy_bin.test 2 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 9.623e-05
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 100, time = 0.000221452 0.00010214, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 100, time = 8.2983e-05 6.4147e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 100, time = 8.4291e-05 6.3993e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 100, time = 8.0393e-05 6.3648e-05, mem = 9.27027
++ ../app/KRR/KRR_Standard_IsotropicGaussian_DPoint.ex 3 Toy_mult.train Toy_mult.test 3 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 100, time = 0.000157613 9.0785e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 100, time = 0.000106422 6.0407e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 100, time = 0.000106428 6.6452e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 100, time = 0.000103881 6.1349e-05, mem = 37
++ ../app/KRR/KRR_Fourier_IsotropicGaussian_DPoint.ex 3 Toy_mult.train Toy_mult.test 3 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 100, time = 0.000196536 4.2115e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 100, time = 2.2586e-05 2.1451e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 90, time = 1.8444e-05 1.993e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 90, time = 1.7266e-05 1.9318e-05, mem = 6
++ ../app/KRR/KRR_Nystrom_IsotropicGaussian_DPoint.ex 3 Toy_mult.train Toy_mult.test 3 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 40, time = 0.000399477 4.6272e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 40, time = 9.1589e-05 3.0903e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 100, time = 8.2194e-05 2.8289e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 100, time = 8.1206e-05 2.7734e-05, mem = 6
++ ../app/KRR/KRR_RLCM_IsotropicGaussian_DPoint.ex 3 Toy_mult.train Toy_mult.test 3 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 4.7203e-05
+KRR_RLCM: r = 6, param = 0.3 1, perf = 100, time = 0.000606848 0.000159882, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 100, time = 0.000391335 0.000154784, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 100, time = 0.000401777 0.000151446, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 100, time = 0.000389141 0.00015086, mem = 20.1351
++ ../app/KRR/KRR_BlockDiag_IsotropicGaussian_DPoint.ex 3 Toy_mult.train Toy_mult.test 3 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 4.4904e-05
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 90, time = 0.000190314 0.000121624, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 90, time = 8.6632e-05 8.7753e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 100, time = 8.3298e-05 7.7557e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 100, time = 8.6273e-05 8.2361e-05, mem = 9.27027
++ ../app/KRR_binary/KRR_Standard_IsotropicGaussian_binary.ex 3 Toy_regr_binary.train Toy_regr_binary.test 1 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 0.364373, time = 0.000294139 6.7543e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 0.272404, time = 9.6118e-05 4.1426e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 0.303904, time = 9.5643e-05 3.7921e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 0.294765, time = 9.8017e-05 3.7827e-05, mem = 37
++ ../app/KRR_binary/KRR_Fourier_IsotropicGaussian_binary.ex 3 Toy_regr_binary.train Toy_regr_binary.test 1 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 0.445026, time = 0.000169278 3.5437e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 0.420082, time = 1.8013e-05 1.4229e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 0.380234, time = 1.6369e-05 1.245e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 0.255025, time = 1.4512e-05 1.1657e-05, mem = 6
++ ../app/KRR_binary/KRR_Nystrom_IsotropicGaussian_binary.ex 3 Toy_regr_binary.train Toy_regr_binary.test 1 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 0.607721, time = 0.000292772 2.9486e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 0.605187, time = 6.7014e-05 1.5933e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 0.292733, time = 5.8419e-05 1.4584e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 0.248037, time = 5.7103e-05 1.4057e-05, mem = 6
++ ../app/KRR_binary/KRR_RLCM_IsotropicGaussian_binary.ex 3 Toy_regr_binary.train Toy_regr_binary.test 1 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 4.6242e-05
+KRR_RLCM: r = 6, param = 0.3 1, perf = 0.438, time = 0.000808482 0.000144037, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 0.403722, time = 0.000382082 0.000129579, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 0.298825, time = 0.000384539 0.000130145, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 0.280039, time = 0.000370211 0.000127413, mem = 20.1351
++ ../app/KRR_binary/KRR_BlockDiag_IsotropicGaussian_binary.ex 3 Toy_regr_binary.train Toy_regr_binary.test 1 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 6.1354e-05
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 0.453246, time = 0.000240717 0.000103278, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 0.415891, time = 8.0768e-05 6.2766e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 0.277759, time = 7.8999e-05 6.2961e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 0.282229, time = 8.1455e-05 6.3148e-05, mem = 9.27027
++ ../app/KRR_binary/KRR_Standard_IsotropicGaussian_binary.ex 3 Toy_bin_binary.train Toy_bin_binary.test 2 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 100, time = 0.000456089 6.8862e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 100, time = 9.7376e-05 4.0554e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 100, time = 9.5493e-05 4.1087e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 100, time = 9.3878e-05 3.9333e-05, mem = 37
++ ../app/KRR_binary/KRR_Fourier_IsotropicGaussian_binary.ex 3 Toy_bin_binary.train Toy_bin_binary.test 2 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 100, time = 0.000174354 3.4544e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 100, time = 1.7799e-05 1.339e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 100, time = 1.5811e-05 1.2389e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 100, time = 1.4285e-05 1.1925e-05, mem = 6
++ ../app/KRR_binary/KRR_Nystrom_IsotropicGaussian_binary.ex 3 Toy_bin_binary.train Toy_bin_binary.test 2 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 80, time = 0.000359871 2.9271e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 80, time = 6.3379e-05 1.5885e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 100, time = 5.8355e-05 1.4563e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 100, time = 5.6613e-05 1.4174e-05, mem = 6
++ ../app/KRR_binary/KRR_RLCM_IsotropicGaussian_binary.ex 3 Toy_bin_binary.train Toy_bin_binary.test 2 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 4.6558e-05
+KRR_RLCM: r = 6, param = 0.3 1, perf = 100, time = 0.000782923 0.000490746, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 100, time = 0.000407794 0.000142929, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 100, time = 0.000405572 0.000141949, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 100, time = 0.000418284 0.000135644, mem = 20.1351
++ ../app/KRR_binary/KRR_BlockDiag_IsotropicGaussian_binary.ex 3 Toy_bin_binary.train Toy_bin_binary.test 2 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 4.5716e-05
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 100, time = 0.000217954 0.000100713, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 100, time = 7.8831e-05 6.5341e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 100, time = 7.8998e-05 6.3912e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 100, time = 7.6959e-05 6.1643e-05, mem = 9.27027
++ ../app/KRR_binary/KRR_Standard_IsotropicGaussian_binary.ex 3 Toy_mult_binary.train Toy_mult_binary.test 3 2 162 2 0.3 1 2 1 1e-1
+KRR_Standard: param = 0.3 1, perf = 100, time = 0.000252428 8.139e-05, mem = 37
+KRR_Standard: param = 0.3 0.1, perf = 100, time = 9.6406e-05 5.719e-05, mem = 37
+KRR_Standard: param = 1 1, perf = 100, time = 8.8599e-05 5.4628e-05, mem = 37
+KRR_Standard: param = 1 0.1, perf = 100, time = 8.8417e-05 5.5052e-05, mem = 37
++ ../app/KRR_binary/KRR_Fourier_IsotropicGaussian_binary.ex 3 Toy_mult_binary.train Toy_mult_binary.test 3 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Fourier: r = 6, param = 0.3 1, perf = 100, time = 0.000170697 3.8707e-05, mem = 6
+KRR_Fourier: r = 6, param = 0.3 0.1, perf = 100, time = 1.7827e-05 2.0937e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 1, perf = 90, time = 1.9511e-05 1.9637e-05, mem = 6
+KRR_Fourier: r = 6, param = 1 0.1, perf = 90, time = 1.4232e-05 1.8738e-05, mem = 6
++ ../app/KRR_binary/KRR_Nystrom_IsotropicGaussian_binary.ex 3 Toy_mult_binary.train Toy_mult_binary.test 3 2 1 6 162 2 0.3 1 2 1 1e-1
+KRR_Nystrom: r = 6, param = 0.3 1, perf = 40, time = 0.000330551 3.6739e-05, mem = 6
+KRR_Nystrom: r = 6, param = 0.3 0.1, perf = 40, time = 7.9501e-05 2.346e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 1, perf = 100, time = 5.9316e-05 2.1845e-05, mem = 6
+KRR_Nystrom: r = 6, param = 1 0.1, perf = 100, time = 5.6795e-05 2.2005e-05, mem = 6
++ ../app/KRR_binary/KRR_RLCM_IsotropicGaussian_binary.ex 3 Toy_mult_binary.train Toy_mult_binary.test 3 2 1 6 162 2 0.3 1 2 1 1e-1 RAND 1e-8 0
+KRR_RLCM: pretrain time = 5.124e-05
+KRR_RLCM: r = 6, param = 0.3 1, perf = 100, time = 0.000626335 0.000152122, mem = 20.1351
+KRR_RLCM: r = 6, param = 0.3 0.1, perf = 100, time = 0.000410639 0.000157055, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 1, perf = 100, time = 0.000403626 0.000148392, mem = 20.1351
+KRR_RLCM: r = 6, param = 1 0.1, perf = 100, time = 0.000384452 0.000152513, mem = 20.1351
++ ../app/KRR_binary/KRR_BlockDiag_IsotropicGaussian_binary.ex 3 Toy_mult_binary.train Toy_mult_binary.test 3 2 1 6 162 2 0.3 1 2 1 1e-1 RAND
+KRR_BlockDiag: pretrain time = 4.524e-05
+KRR_BlockDiag: N0 = 6, param = 0.3 1, perf = 90, time = 9.6493e-05 0.00011138, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 0.3 0.1, perf = 90, time = 8.2399e-05 7.9614e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 1, perf = 100, time = 7.7463e-05 7.2885e-05, mem = 9.27027
+KRR_BlockDiag: N0 = 6, param = 1 0.1, perf = 100, time = 7.7004e-05 7.3058e-05, mem = 9.27027
++ ../app/GP/GP_Standard.ex 3 2 40 50 -0.8 -1.0 +0.8 +1.0 0.5 1.5 -3 3 0.1 0.5 1.0 3 0.5 1.5 2.5 3 -5 -3 -1 1 0.5 1 1e-5 1e-5 1e-5 1 Test_GP_Standard_RF 1 Test_GP_Standard_LogLik.txt 1 1 Test_GP_Standard_Fisher.txt 1 Test_GP_Standard_RF_kriged 1 Test_GP_Standard_Pred.txt
+GP_Standard: Sampling time = 0.318148s
+GP_Standard: Written random field to file Test_GP_Standard_RF.val
+MLE_Standard: Grid search ell = 0.1, nu = 0.5, tau = -5, loglik = -6.1830897720825124e+02
+MLE_Standard: Grid search ell = 0.1, nu = 0.5, tau = -3, loglik = -6.1960221206151789e+02
+MLE_Standard: Grid search ell = 0.1, nu = 0.5, tau = -1, loglik = -7.3093248911004889e+02
+MLE_Standard: Grid search ell = 0.1, nu = 1.5, tau = -5, loglik = -1.8169604621109158e+02
+MLE_Standard: Grid search ell = 0.1, nu = 1.5, tau = -3, loglik = -1.8682830532010416e+02
+MLE_Standard: Grid search ell = 0.1, nu = 1.5, tau = -1, loglik = -4.8319340080155143e+02
+MLE_Standard: Grid search ell = 0.1, nu = 2.5, tau = -5, loglik = 1.1360625548986673e+02
+MLE_Standard: Grid search ell = 0.1, nu = 2.5, tau = -3, loglik = 9.9571642536719310e+01
+MLE_Standard: Grid search ell = 0.1, nu = 2.5, tau = -1, loglik = -3.8665346097313193e+02
+MLE_Standard: Grid search ell = 0.5, nu = 0.5, tau = -5, loglik = 1.0112323086411345e+02
+MLE_Standard: Grid search ell = 0.5, nu = 0.5, tau = -3, loglik = 9.5140200926142256e+01
+MLE_Standard: Grid search ell = 0.5, nu = 0.5, tau = -1, loglik = -2.6520269549926888e+02
+MLE_Standard: Grid search ell = 0.5, nu = 1.5, tau = -5, loglik = 9.5478312385828940e+02
+MLE_Standard: Grid search ell = 0.5, nu = 1.5, tau = -3, loglik = 1.1547422213618511e+03
+MLE_Standard: Grid search ell = 0.5, nu = 1.5, tau = -1, loglik = 1.2694578827618784e+01
+MLE_Standard: Grid search ell = 0.5, nu = 2.5, tau = -5, loglik = -1.7109535197050576e+04
+MLE_Standard: Grid search ell = 0.5, nu = 2.5, tau = -3, loglik = 5.7951539356142325e+02
+MLE_Standard: Grid search ell = 0.5, nu = 2.5, tau = -1, loglik = 2.9167236462596065e+01
+MLE_Standard: Grid search ell = 1, nu = 0.5, tau = -5, loglik = 4.0437150876155238e+02
+MLE_Standard: Grid search ell = 1, nu = 0.5, tau = -3, loglik = 3.9294617234383463e+02
+MLE_Standard: Grid search ell = 1, nu = 0.5, tau = -1, loglik = -1.3882360577687473e+02
+MLE_Standard: Grid search ell = 1, nu = 1.5, tau = -5, loglik = -3.9238136004097150e+03
+MLE_Standard: Grid search ell = 1, nu = 1.5, tau = -3, loglik = 5.5144576178273860e+02
+MLE_Standard: Grid search ell = 1, nu = 1.5, tau = -1, loglik = -4.1462123038058962e-01
+MLE_Standard: Grid search ell = 1, nu = 2.5, tau = -5, loglik = -8.6160524748725482e+04
+MLE_Standard: Grid search ell = 1, nu = 2.5, tau = -3, loglik = -3.0328519316773049e+03
+MLE_Standard: Grid search ell = 1, nu = 2.5, tau = -1, loglik = -8.1317025005027290e+01
+GP_Standard: Truth     ell = 0.5, nu = 1.5, tau = -3
+GP_Standard: Estimated ell = 0.5, nu = 1.5, tau = -3, max loglik = 1.1547422213618511e+03, MLE time = 2.20491s
+GP_Standard: Written loglik to file Test_GP_Standard_LogLik.txt
+
+Numerical differentiation for param #0:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +1.8370815971820775e+01   -7.7686420067948347e+03
+5.0000000000000001e-04   +1.8367014014529559e+01   -7.7686297536274651e+03
+2.5000000000000001e-04   +1.8366063578469038e+01   -7.7686245131189935e+03
+1.2500000000000000e-04   +1.8365825666478486e+01   -7.7686196018476039e+03
+6.2500000000000001e-05   +1.8365766321949195e+01   -7.7685571741312742e+03
+3.1250000000000001e-05   +1.8365751471719705e+01   -7.7685685828328133e+03
+1.5625000000000000e-05   +1.8365746655035764e+01   -7.7680908143520355e+03
+7.8125000000000002e-06   +1.8365749012446031e+01   -7.7668800950050354e+03
+3.9062500000000001e-06   +1.8365753116086125e+01   -7.7577233314514160e+03
+1.9531250000000000e-06   +1.8365717260167003e+01   -7.7064037322998047e+03
+
+Numerical differentiation for param #1:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +2.9177935111874831e+01   -1.8103532784152776e+03
+5.0000000000000001e-04   +2.9177618792800786e+01   -1.8103521233570063e+03
+2.5000000000000001e-04   +2.9177539251577400e+01   -1.8103546099155210e+03
+1.2500000000000000e-04   +2.9177519827499054e+01   -1.8103388720192015e+03
+6.2500000000000001e-05   +2.9177514534239890e+01   -1.8104152986779809e+03
+3.1250000000000001e-05   +2.9177518910728395e+01   -1.8103541806340218e+03
+1.5625000000000000e-05   +2.9177516247727908e+01   -1.8092524260282516e+03
+7.8125000000000002e-06   +2.9177538119256496e+01   -1.8092840909957886e+03
+3.9062500000000001e-06   +2.9177504940889776e+01   -1.8131732940673828e+03
+1.9531250000000000e-06   +2.9177473857998848e+01   -1.7077922821044922e+03
+
+Numerical differentiation for param #2:
+Step size                First difference          Second difference
+1.0000000000000000e-03   -3.9683406526137333e+01   -5.8045857667821110e+02
+5.0000000000000001e-04   -3.9683348383732664e+01   -5.8045820696861483e+02
+2.5000000000000001e-04   -3.9683333890025096e+01   -5.8045477635459974e+02
+1.2500000000000000e-04   -3.9683330593106803e+01   -5.8044446632266045e+02
+6.2500000000000001e-05   -3.9683329556282843e+01   -5.8042875025421381e+02
+3.1250000000000001e-05   -3.9683328810497187e+01   -5.8032386004924774e+02
+1.5625000000000000e-05   -3.9683328752289526e+01   -5.7998858392238617e+02
+7.8125000000000002e-06   -3.9683316164882854e+01   -5.7733803987503052e+02
+3.9062500000000001e-06   -3.9683335460722446e+01   -5.7554244995117188e+02
+1.9531250000000000e-06   -3.9683318347670138e+01   -5.4705142974853516e+02
+MLE_Standard: Fisher info ell = 0.50001, nu = 1.5, tau = -3, loglik = 1.1547424046309911e+03
+MLE_Standard: Fisher info ell = 0.49999, nu = 1.5, tau = -3, loglik = 1.1547420373160662e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.50001, tau = -3, loglik = 1.1547425130466168e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.49999, tau = -3, loglik = 1.1547419294962688e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.5, tau = -2.99999, loglik = 1.1547418244995865e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.5, tau = -3.00001, loglik = 1.1547426181662449e+03
+MLE_Standard: Fisher info ell = 0.50001, nu = 1.50001, tau = -3, loglik = 1.1547426959611080e+03
+MLE_Standard: Fisher info ell = 0.49999, nu = 1.49999, tau = -3, loglik = 1.1547417450957178e+03
+MLE_Standard: Fisher info ell = 0.50001, nu = 1.49999, tau = -3, loglik = 1.1547421131198585e+03
+MLE_Standard: Fisher info ell = 0.49999, nu = 1.50001, tau = -3, loglik = 1.1547423293552993e+03
+MLE_Standard: Fisher info ell = 0.50001, nu = 1.5, tau = -2.99999, loglik = 1.1547420078559808e+03
+MLE_Standard: Fisher info ell = 0.49999, nu = 1.5, tau = -3.00001, loglik = 1.1547424342076974e+03
+MLE_Standard: Fisher info ell = 0.50001, nu = 1.5, tau = -3.00001, loglik = 1.1547428013477479e+03
+MLE_Standard: Fisher info ell = 0.49999, nu = 1.5, tau = -2.99999, loglik = 1.1547416403663738e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.50001, tau = -2.99999, loglik = 1.1547421162399205e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.49999, tau = -3.00001, loglik = 1.1547423263562614e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.50001, tau = -3.00001, loglik = 1.1547429097951799e+03
+MLE_Standard: Fisher info ell = 0.5, nu = 1.49999, tau = -2.99999, loglik = 1.1547415325783304e+03
+Fisher = [7766.45 3545.83 -873.891 ;
+3545.83 1808.17 -556.679 ;
+-873.891 -556.679 578.707 ];
+
+Cov = [0.00143549 -0.00305128 -0.000767434 ;
+-0.00305128 0.00727154 0.0023871 ;
+-0.000767434 0.0023871 0.00286534 ];
+
+Stderr = [0.0378878;
+0.0852733;
+0.0535289];
+
+GP_Standard: Stderr ell = 0.0378878, nu = 0.0852733, tau = 0.0535289
+GP_Standard: Written Fisher to file Test_GP_Standard_Fisher.txt
+GP_Standard: Kriging time = 0.231313s
+GP_Standard: Written random field to file Test_GP_Standard_RF_kriged.val
+GP_Standard: Written predictions to file Test_GP_Standard_Pred.txt
++ ../app/GP/GP_RLCM.ex 3 2 40 50 -0.8 -1.0 +0.8 +1.0 0.5 1.5 -3 3 0.1 0.5 1.0 3 0.5 1.5 2.5 3 -5 -3 -1 250 1e-8 1 0.5 1 1e-5 1e-5 1e-5 1 Test_GP_RLCM_RF 1 Test_GP_RLCM_LogLik.txt 1 1 Test_GP_RLCM_Fisher.txt 1 Test_GP_RLCM_RF_kriged 1 Test_GP_RLCM_Pred.txt
+GP_RLCM: Sampling time = 2.67821s
+GP_RLCM: Written random field to file Test_GP_RLCM_RF.val
+MLE_RLCM: Grid search ell = 0.1, nu = 0.5, tau = -5, loglik = -6.3234629003201144e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 0.5, tau = -3, loglik = -6.3362745167893991e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 0.5, tau = -1, loglik = -7.4403923360413603e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 1.5, tau = -5, loglik = -1.9955599722366219e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 1.5, tau = -3, loglik = -2.0455134775217186e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 1.5, tau = -1, loglik = -4.9606184613270239e+02
+MLE_RLCM: Grid search ell = 0.1, nu = 2.5, tau = -5, loglik = 8.9555016083760393e+01
+MLE_RLCM: Grid search ell = 0.1, nu = 2.5, tau = -3, loglik = 7.6206625294623677e+01
+MLE_RLCM: Grid search ell = 0.1, nu = 2.5, tau = -1, loglik = -3.9906756867903096e+02
+MLE_RLCM: Grid search ell = 0.5, nu = 0.5, tau = -5, loglik = 9.2607123322010466e+01
+MLE_RLCM: Grid search ell = 0.5, nu = 0.5, tau = -3, loglik = 8.6695008384775974e+01
+MLE_RLCM: Grid search ell = 0.5, nu = 0.5, tau = -1, loglik = -2.7090516690949948e+02
+MLE_RLCM: Grid search ell = 0.5, nu = 1.5, tau = -5, loglik = 9.1691105570773288e+02
+MLE_RLCM: Grid search ell = 0.5, nu = 1.5, tau = -3, loglik = 1.1395379388775655e+03
+MLE_RLCM: Grid search ell = 0.5, nu = 1.5, tau = -1, loglik = 6.7594757986535114e+00
+MLE_RLCM: Grid search ell = 0.5, nu = 2.5, tau = -5, loglik = -1.7858836052637893e+04
+MLE_RLCM: Grid search ell = 0.5, nu = 2.5, tau = -3, loglik = 6.4753045012928669e+02
+MLE_RLCM: Grid search ell = 0.5, nu = 2.5, tau = -1, loglik = 1.4843791107845846e+01
+MLE_RLCM: Grid search ell = 1, nu = 0.5, tau = -5, loglik = 3.9305412285221541e+02
+MLE_RLCM: Grid search ell = 1, nu = 0.5, tau = -3, loglik = 3.8178671247164243e+02
+MLE_RLCM: Grid search ell = 1, nu = 0.5, tau = -1, loglik = -1.4636687572303128e+02
+MLE_RLCM: Grid search ell = 1, nu = 1.5, tau = -5, loglik = -4.1021838749484541e+03
+MLE_RLCM: Grid search ell = 1, nu = 1.5, tau = -3, loglik = 5.7893833475260953e+02
+MLE_RLCM: Grid search ell = 1, nu = 1.5, tau = -1, loglik = -3.3925856186518558e+01
+MLE_RLCM: Grid search ell = 1, nu = 2.5, tau = -5, loglik = -8.4689158533799346e+04
+MLE_RLCM: Grid search ell = 1, nu = 2.5, tau = -3, loglik = -2.9896301129632843e+03
+MLE_RLCM: Grid search ell = 1, nu = 2.5, tau = -1, loglik = -1.4714306871042663e+02
+GP_RLCM: Truth     ell = 0.5, nu = 1.5, tau = -3
+GP_RLCM: Estimated ell = 0.5, nu = 1.5, tau = -3, max loglik = 1.1395379388775655e+03, MLE time = 4.19446s
+GP_RLCM: Written loglik to file Test_GP_RLCM_LogLik.txt
+
+Numerical differentiation for param #0:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +5.0955137586925048e+01   -7.4443471216909529e+03
+5.0000000000000001e-04   +5.0951324809830112e+01   -7.4443359299039003e+03
+2.5000000000000001e-04   +5.0950372648003395e+01   -7.4443314515519887e+03
+1.2500000000000000e-04   +5.0950134453159990e+01   -7.4443061021156609e+03
+6.2500000000000001e-05   +5.0950076562003233e+01   -7.4443935882300138e+03
+3.1250000000000001e-05   +5.0950054748682305e+01   -7.4442932382225990e+03
+1.5625000000000000e-05   +5.0950041390024126e+01   -7.4438825249671936e+03
+7.8125000000000002e-06   +5.0950052042026073e+01   -7.4408054351806641e+03
+3.9062500000000001e-06   +5.0950063276104629e+01   -7.3779225349426270e+03
+1.9531250000000000e-06   +5.0950098317116499e+01   -7.5619220733642578e+03
+
+Numerical differentiation for param #1:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +4.0898798242096746e+01   -1.6931393142840534e+03
+5.0000000000000001e-04   +4.0898444486174412e+01   -1.6931386835494777e+03
+2.5000000000000001e-04   +4.0898356867728580e+01   -1.6931416685110889e+03
+1.2500000000000000e-04   +4.0898336808822933e+01   -1.6931134450715035e+03
+6.2500000000000001e-05   +4.0898330058553256e+01   -1.6933935694396496e+03
+3.1250000000000001e-05   +4.0898319166444708e+01   -1.6932883299887180e+03
+1.5625000000000000e-05   +4.0898352701333351e+01   -1.6913991421461105e+03
+7.8125000000000002e-06   +4.0898332488723099e+01   -1.6847103834152222e+03
+3.9062500000000001e-06   +4.0898382896557450e+01   -1.7005801200866699e+03
+1.9531250000000000e-06   +4.0898339240811765e+01   -1.5560388565063477e+03
+
+Numerical differentiation for param #2:
+Step size                First difference          Second difference
+1.0000000000000000e-03   -1.1655461159534752e+01   -5.8888614421448437e+02
+5.0000000000000001e-04   -1.1655391273961868e+01   -5.8888510102406144e+02
+2.5000000000000001e-04   -1.1655374647489225e+01   -5.8888427884085104e+02
+1.2500000000000000e-04   -1.1655370788503205e+01   -5.8889924548566341e+02
+6.2500000000000001e-05   -1.1655362817691639e+01   -5.8896583504974842e+02
+3.1250000000000001e-05   -1.1655374211841263e+01   -5.8932229876518250e+02
+1.5625000000000000e-05   -1.1655354872345924e+01   -5.9046968817710876e+02
+7.8125000000000002e-06   -1.1655362264718860e+01   -5.8405101299285889e+02
+3.9062500000000001e-06   -1.1655323731247336e+01   -6.0513615608215332e+02
+1.9531250000000000e-06   -1.1655397829599679e+01   -6.6745281219482422e+02
+MLE_RLCM: Fisher info ell = 0.50001, nu = 1.5, tau = -3, loglik = 1.1395384480057760e+03
+MLE_RLCM: Fisher info ell = 0.49999, nu = 1.5, tau = -3, loglik = 1.1395374290052118e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.50001, tau = -3, loglik = 1.1395383477760688e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.49999, tau = -3, loglik = 1.1395375298093682e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.5, tau = -2.99999, loglik = 1.1395378222943195e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.5, tau = -3.00001, loglik = 1.1395380554020171e+03
+MLE_RLCM: Fisher info ell = 0.50001, nu = 1.50001, tau = -3, loglik = 1.1395388565759581e+03
+MLE_RLCM: Fisher info ell = 0.49999, nu = 1.49999, tau = -3, loglik = 1.1395370196083163e+03
+MLE_RLCM: Fisher info ell = 0.50001, nu = 1.49999, tau = -3, loglik = 1.1395380392662232e+03
+MLE_RLCM: Fisher info ell = 0.49999, nu = 1.50001, tau = -3, loglik = 1.1395378382319591e+03
+MLE_RLCM: Fisher info ell = 0.50001, nu = 1.5, tau = -2.99999, loglik = 1.1395383315208796e+03
+MLE_RLCM: Fisher info ell = 0.49999, nu = 1.5, tau = -3.00001, loglik = 1.1395375456267880e+03
+MLE_RLCM: Fisher info ell = 0.50001, nu = 1.5, tau = -3.00001, loglik = 1.1395385644321477e+03
+MLE_RLCM: Fisher info ell = 0.49999, nu = 1.5, tau = -2.99999, loglik = 1.1395373123238769e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.50001, tau = -2.99999, loglik = 1.1395382312563343e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.49999, tau = -3.00001, loglik = 1.1395376463969556e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.50001, tau = -3.00001, loglik = 1.1395384642373574e+03
+MLE_RLCM: Fisher info ell = 0.5, nu = 1.49999, tau = -2.99999, loglik = 1.1395374131631052e+03
+Fisher = [7441.43 3284.77 -979.107 ;
+3284.77 1696.94 -632.068 ;
+-979.107 -632.068 587.943 ];
+
+Cov = [0.00109449 -0.00240123 -0.000758781 ;
+-0.00240123 0.006251 0.00272134 ;
+-0.000758781 0.00272134 0.00336282 ];
+
+Stderr = [0.0330831;
+0.0790633;
+0.0579898];
+
+GP_RLCM: Stderr ell = 0.0330831, nu = 0.0790633, tau = 0.0579898
+GP_RLCM: Written Fisher to file Test_GP_RLCM_Fisher.txt
+GP_RLCM: Kriging time = 0.61693s
+GP_RLCM: Written random field to file Test_GP_RLCM_RF_kriged.val
+GP_RLCM: Written predictions to file Test_GP_RLCM_Pred.txt
++ ../app/GP/GP_Standard_TestFunction.ex 3 40 40 0 0 1 1 1e-2 3 0.05 0.1 0.15 3 0.05 0.1 0.15 3 -5 -3 -1 1 0.5 1 1e-5 1e-5 1e-5 1 Test_GP2_Standard_RF 1 Test_GP2_Standard_LogLik.txt 1 1 Test_GP2_Standard_Fisher.txt 1 Test_GP2_Standard_RF_kriged 1 Test_GP2_Standard_Pred.txt
+GP_Standard_TestFunction: Written random field to file Test_GP2_Standard_RF.val
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -5, loglik = 4.9766272494556745e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -3, loglik = 4.5586794994914351e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -1, loglik = -3.1014649027505220e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -5, loglik = 5.3406078518766878e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -3, loglik = 9.9101242401853949e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -1, loglik = -1.6397758363758851e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -5, loglik = 2.4491266467955018e+02
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -3, loglik = 1.1505503933963355e+03
+MLE_Standard: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -1, loglik = -1.3838660174707093e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -5, loglik = 4.7485250003100316e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -3, loglik = 9.8882004204653947e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -1, loglik = -1.6839113786388509e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -5, loglik = 3.3963494660746744e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -3, loglik = 1.3479413298812933e+03
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -1, loglik = -6.1280795302401657e+01
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -5, loglik = 1.0970068088407550e+02
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -3, loglik = 1.4240724438516459e+03
+MLE_Standard: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -1, loglik = -4.7948727686537836e+01
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -5, loglik = -6.9246934399524309e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -3, loglik = 4.6493151409656446e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -1, loglik = -2.0852492387213613e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -5, loglik = -8.0805954041684129e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -3, loglik = 8.3216088151651741e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -1, loglik = -1.2163722412150548e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -5, loglik = -1.7697187258565145e+03
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -3, loglik = 5.8111969303187573e+02
+MLE_Standard: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -1, loglik = -1.1366455433959197e+02
+GP_Standard_TestFunction: Estimated sigma1 = 0.1, sigma2 = 0.15, tau = -3, max loglik = 1.4240724438516459e+03, MLE time = 0.855823s
+GP_Standard_TestFunction: Written loglik to file Test_GP2_Standard_LogLik.txt
+
+Numerical differentiation for param #0:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +6.3366254642028252e+02   -2.2340539477090715e+05
+5.0000000000000001e-04   +6.3469160065278629e+02   -2.2335998071321228e+05
+2.5000000000000001e-04   +6.3494876743334316e+02   -2.2334862643765518e+05
+1.2500000000000000e-04   +6.3501305303543631e+02   -2.2334578828304075e+05
+6.2500000000000001e-05   +6.3502912398325861e+02   -2.2334507165942341e+05
+3.1250000000000001e-05   +6.3503314163972391e+02   -2.2334489179775119e+05
+1.5625000000000000e-05   +6.3503414600563701e+02   -2.2334482707083225e+05
+7.8125000000000002e-06   +6.3503439689520746e+02   -2.2334463894367218e+05
+3.9062500000000001e-06   +6.3503445923561230e+02   -2.2334393858909607e+05
+1.9531250000000000e-06   +6.3503447803668678e+02   -2.2334408760070801e+05
+
+Numerical differentiation for param #1:
+Step size                First difference          Second difference
+1.0000000000000000e-03   -4.0434141764762899e+01   -5.9497914739949920e+04
+5.0000000000000001e-04   -4.0426721396670473e+01   -5.9494935097973212e+04
+2.5000000000000001e-04   -4.0424881807666679e+01   -5.9494190099940170e+04
+1.2500000000000000e-04   -4.0424422903015511e+01   -5.9494004701264203e+04
+6.2500000000000001e-05   -4.0424308175715851e+01   -5.9493950917385519e+04
+3.1250000000000001e-05   -4.0424279752187431e+01   -5.9493930079042912e+04
+1.5625000000000000e-05   -4.0424272636300884e+01   -5.9493960812687874e+04
+7.8125000000000002e-06   -4.0424269653158262e+01   -5.9493787586688995e+04
+3.9062500000000001e-06   -4.0424269973300397e+01   -5.9493660926818848e+04
+1.9531250000000000e-06   -4.0424267644993961e+01   -5.9493422508239746e+04
+
+Numerical differentiation for param #2:
+Step size                First difference          Second difference
+1.0000000000000000e-03   -6.4733925966879724e+02   -1.9067610037382110e+02
+5.0000000000000001e-04   -6.4733930301144937e+02   -1.9067616267420817e+02
+2.5000000000000001e-04   -6.4733931383489107e+02   -1.9067617540713400e+02
+1.2500000000000000e-04   -6.4733931637783826e+02   -1.9067936227656901e+02
+6.2500000000000001e-05   -6.4733931703813141e+02   -1.9069062545895576e+02
+3.1250000000000001e-05   -6.4733931753289653e+02   -1.9068317487835884e+02
+1.5625000000000000e-05   -6.4733931758382823e+02   -1.9107572734355927e+02
+7.8125000000000002e-06   -6.4733931617229246e+02   -1.9191950559616089e+02
+3.9062500000000001e-06   -6.4733932010130957e+02   -1.9398331642150879e+02
+1.9531250000000000e-06   -6.4733932958915830e+02   -2.1076202392578125e+02
+MLE_Standard: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -3, loglik = 1.4240787830278382e+03
+MLE_Standard: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -3, loglik = 1.4240660823409662e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -3, loglik = 1.4240720366342457e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -3, loglik = 1.4240728451196510e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.15, tau = -2.99999, loglik = 1.4240659704489130e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.15, tau = -3.00001, loglik = 1.4240789172352388e+03
+MLE_Standard: Fisher info sigma1 = 0.10001, sigma2 = 0.15001, tau = -3, loglik = 1.4240783710280698e+03
+MLE_Standard: Fisher info sigma1 = 0.09999, sigma2 = 0.14999, tau = -3, loglik = 1.4240664788292279e+03
+MLE_Standard: Fisher info sigma1 = 0.10001, sigma2 = 0.14999, tau = -3, loglik = 1.4240791890776936e+03
+MLE_Standard: Fisher info sigma1 = 0.09999, sigma2 = 0.15001, tau = -3, loglik = 1.4240656799038848e+03
+MLE_Standard: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -2.99999, loglik = 1.4240723095527296e+03
+MLE_Standard: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -3.00001, loglik = 1.4240725556521138e+03
+MLE_Standard: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -3.00001, loglik = 1.4240852564838046e+03
+MLE_Standard: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -2.99999, loglik = 1.4240596090106828e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -2.99999, loglik = 1.4240655631914847e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -3.00001, loglik = 1.4240793184632075e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -3.00001, loglik = 1.4240785100578619e+03
+MLE_Standard: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -2.99999, loglik = 1.4240663717569578e+03
+Fisher = [223345 47810.7 724.11 ;
+47810.7 59494 400.319 ;
+724.11 400.319 191.399 ];
+
+Cov = [5.43286e-06 -4.28802e-06 -1.15853e-05 ;
+-4.28802e-06 2.04328e-05 -2.65134e-05 ;
+-1.15853e-05 -2.65134e-05 0.00532398 ];
+
+Stderr = [0.00233085;
+0.00452026;
+0.0729656];
+
+GP_Standard_TestFunction: Stderr sigma1 = 0.00233085, sigma2 = 0.00452026, tau = 0.0729656
+GP_Standard_TestFunction: Written Fisher to file Test_GP2_Standard_Fisher.txt
+GP_Standard_TestFunction: Kriging time = 0.0913999s
+GP_Standard_TestFunction: Written random field to file Test_GP2_Standard_RF_kriged.val
+GP_Standard_TestFunction: Written predictions to file Test_GP2_Standard_Pred.txt
++ ../app/GP/GP_RLCM_TestFunction.ex 3 40 40 0 0 1 1 1e-2 3 0.05 0.1 0.15 3 0.05 0.1 0.15 3 -5 -3 -1 125 1e-8 1 0.5 1 1e-5 1e-5 1e-5 1 Test_GP2_RLCM_RF 1 Test_GP2_RLCM_LogLik.txt 1 1 Test_GP2_RLCM_Fisher.txt 1 Test_GP2_RLCM_RF_kriged 1 Test_GP2_RLCM_Pred.txt
+GP_RLCM_TestFunction: Written random field to file Test_GP2_RLCM_RF.val
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -5, loglik = 4.7630886238216829e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -3, loglik = 4.0267181748206838e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.05, tau = -1, loglik = -3.1993457621953064e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -5, loglik = 6.0318465580463987e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -3, loglik = 9.4868359022368156e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.1, tau = -1, loglik = -1.7147024881016580e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -5, loglik = 2.9105752384149571e+02
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -3, loglik = 1.1106635585396743e+03
+MLE_RLCM: Grid search sigma1 = 0.05, sigma2 = 0.15, tau = -1, loglik = -1.4509168202698197e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -5, loglik = 5.1214187411537057e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -3, loglik = 9.2951894482631326e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.05, tau = -1, loglik = -1.7585685755444683e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -5, loglik = 3.7492438901403273e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -3, loglik = 1.3258644495401836e+03
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.1, tau = -1, loglik = -6.2588612954062796e+01
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -5, loglik = 1.3331025312145209e+02
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -3, loglik = 1.4099126810655957e+03
+MLE_RLCM: Grid search sigma1 = 0.1, sigma2 = 0.15, tau = -1, loglik = -4.8528548781016411e+01
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -5, loglik = -7.7818712334106806e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -3, loglik = 4.3997944334489955e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.05, tau = -1, loglik = -2.1023445228129447e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -5, loglik = -8.5443736359374464e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -3, loglik = 8.3723876836392344e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.1, tau = -1, loglik = -1.2236990874519677e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -5, loglik = -1.9224724947851546e+03
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -3, loglik = 6.0054258440080923e+02
+MLE_RLCM: Grid search sigma1 = 0.15, sigma2 = 0.15, tau = -1, loglik = -1.1403588201947127e+02
+GP_RLCM_TestFunction: Estimated sigma1 = 0.1, sigma2 = 0.15, tau = -3, max loglik = 1.4099126810655957e+03, MLE time = 1.07217s
+GP_RLCM_TestFunction: Written loglik to file Test_GP2_RLCM_LogLik.txt
+
+Numerical differentiation for param #0:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +1.1505639356605570e+03   -2.2466943675954099e+05
+5.0000000000000001e-04   +1.1516511182876457e+03   -2.2460365247934533e+05
+2.5000000000000001e-04   +1.1519226924301620e+03   -2.2458729731442872e+05
+1.2500000000000000e-04   +1.1519905540735635e+03   -2.2458345413906500e+05
+6.2500000000000001e-05   +1.1520076981250895e+03   -2.2458658320829272e+05
+3.1250000000000001e-05   +1.1520117848267546e+03   -2.2455980908125639e+05
+1.5625000000000000e-05   +1.1520137845509453e+03   -2.2463533841073513e+05
+7.8125000000000002e-06   +1.1520139566564467e+03   -2.2461711615324020e+05
+3.9062500000000001e-06   +1.1520136486506090e+03   -2.2426533699035645e+05
+1.9531250000000000e-06   +1.1520145672839135e+03   -2.2364020347595215e+05
+
+Numerical differentiation for param #1:
+Step size                First difference          Second difference
+1.0000000000000000e-03   +3.8843146533054096e+01   -6.1623116192095040e+04
+5.0000000000000001e-04   +3.8830379291539430e+01   -6.1619981068361085e+04
+2.5000000000000001e-04   +3.8827131268590165e+01   -6.1619002146471757e+04
+1.2500000000000000e-04   +3.8826376174256438e+01   -6.1619505053386092e+04
+6.2500000000000001e-05   +3.8826133401016705e+01   -6.1617737635970116e+04
+3.1250000000000001e-05   +3.8826152434921823e+01   -6.1633438803255558e+04
+1.5625000000000000e-05   +3.8826247764518484e+01   -6.1696119606494904e+04
+7.8125000000000002e-06   +3.8824635761557147e+01   -6.1932884156703949e+04
+3.9062500000000001e-06   +3.8826835399959236e+01   -6.1268240213394165e+04
+1.9531250000000000e-06   +3.8824165472760797e+01   -6.0307264328002930e+04
+
+Numerical differentiation for param #2:
+Step size                First difference          Second difference
+1.0000000000000000e-03   -6.3241919002143732e+02   -1.9880624358847854e+02
+5.0000000000000001e-04   -6.3241923229770691e+02   -1.9884810717485379e+02
+2.5000000000000001e-04   -6.3241923981695436e+02   -1.9881239859387279e+02
+1.2500000000000000e-04   -6.3241927194030723e+02   -1.9654270727187395e+02
+6.2500000000000001e-05   -6.3241909411954111e+02   -2.0299933385103941e+02
+3.1250000000000001e-05   -6.3241908372583566e+02   -1.6984855756163597e+02
+1.5625000000000000e-05   -6.3241933632525615e+02   -1.2742355465888977e+02
+7.8125000000000002e-06   -6.3241813069907948e+02   -2.0523369312286377e+02
+3.9062500000000001e-06   -6.3241698773344979e+02   +1.2930333614349365e+03
+1.9531250000000000e-06   -6.3241504924371839e+02   +5.6719779968261719e+02
+MLE_RLCM: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -3, loglik = 1.4099241899785779e+03
+MLE_RLCM: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -3, loglik = 1.4099011496859671e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -3, loglik = 1.4099130662619937e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -3, loglik = 1.4099122897512457e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.15, tau = -2.99999, loglik = 1.4099063568650413e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.15, tau = -3.00001, loglik = 1.4099190052524355e+03
+MLE_RLCM: Fisher info sigma1 = 0.10001, sigma2 = 0.15001, tau = -3, loglik = 1.4099245703277884e+03
+MLE_RLCM: Fisher info sigma1 = 0.09999, sigma2 = 0.14999, tau = -3, loglik = 1.4099007535458904e+03
+MLE_RLCM: Fisher info sigma1 = 0.10001, sigma2 = 0.14999, tau = -3, loglik = 1.4099238034485352e+03
+MLE_RLCM: Fisher info sigma1 = 0.09999, sigma2 = 0.15001, tau = -3, loglik = 1.4099015396920749e+03
+MLE_RLCM: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -2.99999, loglik = 1.4099178656898976e+03
+MLE_RLCM: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -3.00001, loglik = 1.4099074737792680e+03
+MLE_RLCM: Fisher info sigma1 = 0.10001, sigma2 = 0.15, tau = -3.00001, loglik = 1.4099305142497642e+03
+MLE_RLCM: Fisher info sigma1 = 0.09999, sigma2 = 0.15, tau = -2.99999, loglik = 1.4098948256016538e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -2.99999, loglik = 1.4099067420127531e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -3.00001, loglik = 1.4099186138462842e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.15001, tau = -3.00001, loglik = 1.4099193904807144e+03
+MLE_RLCM: Fisher info sigma1 = 0.1, sigma2 = 0.14999, tau = -2.99999, loglik = 1.4099059655857291e+03
+Fisher = [224666 48167.3 955.631 ;
+48167.3 61179.5 518.515 ;
+955.631 518.515 137.147 ];
+
+Cov = [5.42045e-06 -4.07815e-06 -2.23509e-05 ;
+-4.07815e-06 1.99547e-05 -4.70268e-05 ;
+-2.23509e-05 -4.70268e-05 0.00762497 ];
+
+Stderr = [0.00232819;
+0.00446707;
+0.0873211];
+
+GP_RLCM_TestFunction: Stderr sigma1 = 0.00232819, sigma2 = 0.00446707, tau = 0.0873211
+GP_RLCM_TestFunction: Written Fisher to file Test_GP2_RLCM_Fisher.txt
+GP_RLCM_TestFunction: Kriging time = 0.186952s
+GP_RLCM_TestFunction: Written random field to file Test_GP2_RLCM_RF_kriged.val
+GP_RLCM_TestFunction: Written predictions to file Test_GP2_RLCM_Pred.txt

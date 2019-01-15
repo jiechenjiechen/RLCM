@@ -1,0 +1,15 @@
+DIRS = KRR KRR_binary GP
+
+all:
+	generate_KRR_binary.sh
+	for d in ${DIRS}; do ( cd $$d; make ); done
+
+clean:
+	for d in ${DIRS}; do ( if [ -d $$d ]; then ( cd $$d; make clean ) fi ); done
+	rm -f *.o *~
+
+uninstall:
+	for d in ${DIRS}; do ( if [ -d $$d ]; then ( cd $$d; make uninstall ) fi ); done
+	rm -rf Makefile
+	rm -rf KRR_binary
+

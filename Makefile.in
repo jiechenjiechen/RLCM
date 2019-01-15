@@ -1,0 +1,27 @@
+SUBDIRS = src app test
+SRC_SUBDIRS = Misc Solvers Kernels TestFunctions Matrices KRR GP
+
+all:
+	cd src; make
+
+install:
+	mkdir -p lib
+	mkdir -p include
+	cp src/libcmatrix.a lib/
+	for d in ${SRC_SUBDIRS}; do ( test -d include/$$d || mkdir include/$$d; cp src/$$d/*.[ht]pp include/$$d ); done
+	cp src/*.[ht]pp include/
+
+tests:
+	cd test; make
+
+apps:
+	cd app; make
+
+clean:
+	for d in ${SUBDIRS}; do ( cd $$d; make clean ); done
+	rm -f *.o *~
+
+uninstall:
+	make clean
+	for d in ${SUBDIRS}; do ( cd $$d; make uninstall ); done
+	rm -rf Makefile include lib

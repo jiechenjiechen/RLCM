@@ -1,0 +1,41 @@
+CXXFLAGS = -O2 -Wall -std=c++0x
+OBJS     = KRR_Standard.o KRR_Nystrom.o KRR_Fourier.o KRR_RLCM.o KRR_BlockDiag.o
+
+ifeq ($(USE_OPENBLAS),1)
+CXXFLAGS += -DUSE_OPENBLAS
+INCL_PATHS += ${OPENBLAS_INCL_PATH}
+else ifeq ($(USE_ESSL),1)
+CXXFLAGS += ${ESSL_CXXFLAGS}
+INCL_PATHS += ${ESSL_INCL_PATH}
+else ifeq ($(USE_MKL),1)
+CXXFLAGS += ${MKL_CXXFLAGS}
+endif
+
+ifeq ($(USE_OPENMP),1)
+CXXFLAGS += -DUSE_OPENMP
+ifeq ($(USE_MKL),0)
+CXXFLAGS += -fopenmp
+endif
+endif
+
+ifeq ($(USE_LONG),1)
+CXXFLAGS += -DUSE_LONG
+endif
+
+ifeq ($(HAS_METIS),1)
+CXXFLAGS += -DHAS_METIS
+INCL_PATHS += ${METIS_INCL_PATH}
+endif
+
+all:
+	make ${OBJS}
+	ld -o KRR.o -r ${OBJS}
+
+%.o: %.cpp
+	${CXX} -c $< ${CXXFLAGS} ${INCL_PATHS}
+
+clean:
+	rm -f *.o *~
+
+uninstall:
+	rm -f Makefile
