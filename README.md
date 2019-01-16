@@ -24,6 +24,10 @@ Additionally, this library offers
 - log-likelihood calculation; and
 - kernel ridge regression.
 
+## Philosophy
+
+We inevitably need to do approximation. In order to reduce the cost of dense linear algebra to O(n), all these matrix computations can be done only approximately: matrix-vector multiplication, inversion, determinant, Cholesky, etc. We are faced with two options: approximately computing each of these, or approximate the matrix itself only and compute each of these exactly (well, a more precise wording is "numerically stably"). Whereas existing methods generally explore the first option, the work/software here takes the latter approach. We approximate the kernel function (that defines the matrix) first, so that the resulting matrix possesses the "recursive low-rank" structure, and then design numerical algorithms that perform matrix computations stably.
+
 ## Platforms
 
 This library has been tested successfully under
