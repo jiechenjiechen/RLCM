@@ -1,6 +1,6 @@
 # RLCM: Recursively Low-Rank Compressed Matrices
 
-Jie Chen, IBM Research
+Jie Chen, MIT-IBM Watson AI Lab, IBM Research
 
 RLCM is a library, written in C++, that offers the low-level linear algebra routines for a type of structured matrices [(Chen 2014a)](#Chen2014a), [(Chen 2014b)](#Chen2014b) resulting from hierarchical compressions of fully dense covariance/kernel matrices, as well as the high-level application routines for statistics and machine learning, including Gaussian processes [(Chen and Stein 2017)](#Chen2017b) and kernel methods [(Chen et al. 2017)](#Chen2017a).
 
@@ -101,8 +101,8 @@ This library has been tested successfully under
 
 ## Bibliography
 
-- <a name="Chen2017b"></a>Jie Chen and Michael Stein. [Linear-cost covariance functions for Gaussian random fields](http://arxiv.org/abs/1711.05895). Preprint arXiv:1711.05895, 2017.
+- <a name="Chen2017b"></a>Jie Chen and Michael Stein. [Linear-cost covariance functions for Gaussian random fields](http://arxiv.org/abs/1711.05895). Preprint arXiv:1711.05895, 2017. To appear in Journal of the American Statistical Association.
 - <a name="Chen2017a"></a>Jie Chen, Haim Avron, and Vikas Sindhwani. [Hierarchically compositional kernels for scalable nonparametric learning](http://jmlr.org/papers/v18/15-376.html). Journal of Machine Learning Research, 18(66):1–42, 2017.
-- <a name="Chen2014b"></a>Jie Chen. [Computing square root factorization for recursively low-rank compressed matrices](http://domino.watson.ibm.com/library/CyberDig.nsf/1e4115aea78b6e7c85256b360066f0d4/85dc4e2e3aa2a1e185257da1005abb62!OpenDocument). Technical Report RC25499, IBM Thomas J. Watson Research Center, 2014.
-- <a name="Chen2014a"></a>Jie Chen. [Data structure and algorithms for recursively low-rank compressed matrices](http://www.mcs.anl.gov/publication/data-structure-and-algorithms-recursively-low-rank-compressed-matrices). Technical Report ANL/MCS-P5112-0314, Argonne National Laboratory, 2014.
+- <a name="Chen2014b"></a>Jie Chen. [Computing square root factorization for recursively low-rank compressed matrices](https://jiechenjiechen.github.io/pub/rlcm_sqrt_root.pdf). Technical Report RC25499, IBM Thomas J. Watson Research Center, 2014.
+- <a name="Chen2014a"></a>Jie Chen. [Data structure and algorithms for recursively low-rank compressed matrices](https://jiechenjiechen.github.io/pub/rlcm.pdf). Technical Report ANL/MCS-P5112-0314, Argonne National Laboratory, 2014.
 
